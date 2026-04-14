@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
 import StatsStrip from "@/components/sections/StatsStrip";
+import WhoWeServe from "@/components/sections/WhoWeServe";
 import HowItWorks from "@/components/sections/HowItWorks";
 import ServicesGrid from "@/components/sections/ServicesGrid";
 import CaseResults from "@/components/sections/CaseResults";
@@ -122,6 +123,7 @@ export default async function HomePage({ params }: Props) {
       <main id="main-content">
         <Hero />
         <StatsStrip />
+        <WhoWeServe />
         <HowItWorks />
         <ServicesGrid />
         <CaseResults />
