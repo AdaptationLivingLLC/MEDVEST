@@ -63,8 +63,11 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Mobile Nav Toggle */}
-          <MobileNav />
+          {/* Mobile: Language Toggle + Hamburger */}
+          <div className="flex items-center gap-3 lg:hidden">
+            <LanguageToggle />
+            <MobileNav />
+          </div>
         </nav>
       </div>
     </header>

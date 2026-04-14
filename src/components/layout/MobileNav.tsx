@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import LanguageToggle from "./LanguageToggle";
 
 const navItems = [
   { key: "home", href: "/" },
@@ -22,7 +21,7 @@ export default function MobileNav() {
   const t = useTranslations("nav");
 
   return (
-    <div className="lg:hidden">
+    <>
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex flex-col justify-center items-center w-10 h-10 gap-1.5"
@@ -41,7 +40,7 @@ export default function MobileNav() {
         />
         <span
           className={`block w-4 h-0.5 bg-brown-900 transition-transform duration-300 ${
-            isOpen ? "-rotate-45 -translate-y-2 w-6" : ""
+            isOpen ? "-rotate-45 -translate-y-2 !w-6" : ""
           }`}
         />
       </button>
@@ -62,8 +61,7 @@ export default function MobileNav() {
                 </li>
               ))}
             </ul>
-            <div className="mt-6 px-4 space-y-4">
-              <LanguageToggle />
+            <div className="mt-6 px-4">
               <Link
                 href="/contact"
                 onClick={() => setIsOpen(false)}
@@ -75,6 +73,6 @@ export default function MobileNav() {
           </nav>
         </div>
       )}
-    </div>
+    </>
   );
 }
