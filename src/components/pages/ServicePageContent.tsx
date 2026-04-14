@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations, useLocale } from "next-intl";
+import { useLocale } from "next-intl";
 import type { ServicePage } from "@/lib/content";
 import SectionHeader from "@/components/ui/SectionHeader";
 import AnimateIn from "@/components/ui/AnimateIn";
@@ -14,7 +14,6 @@ type Props = {
 
 export default function ServicePageContent({ service }: Props) {
   const locale = useLocale() as "en" | "es";
-  const t = useTranslations("services");
   const isEs = locale === "es";
 
   const benefitIcons = ["shield", "chart", "check", "star", "heart"];

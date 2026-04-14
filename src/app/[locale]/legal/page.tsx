@@ -30,13 +30,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const sections = [
-  { key: "privacy", anchor: "privacy-policy" },
-  { key: "terms", anchor: "terms-of-service" },
-  { key: "hipaa", anchor: "hipaa-notice" },
-  { key: "accessibility", anchor: "accessibility" },
-] as const;
-
 export default async function LegalPage({ params }: Props) {
   const { locale } = await params;
   const isEs = locale === "es";

@@ -4,7 +4,7 @@ import { createContact } from '@/lib/ghl';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const { firstName, lastName, email, phone, message, caseType } = body;
+    const { firstName, lastName, email, phone, caseType } = body;
 
     // Validate required fields
     if (!firstName || !email) {

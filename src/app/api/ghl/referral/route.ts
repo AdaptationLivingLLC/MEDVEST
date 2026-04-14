@@ -10,8 +10,6 @@ export async function POST(request: Request) {
       email,
       phone,
       caseType,
-      caseDescription,
-      injuryDate,
     } = body;
 
     // Validate required fields
