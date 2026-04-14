@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
+import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -96,14 +97,15 @@ export default async function LocaleLayout({ children, params }: Props) {
           {children}
           <Footer />
         </NextIntlClientProvider>
-        {/* GHL Chat Widget */}
-        <script
-          src="https://widgets.leadconnectorhq.com/loader.js"
-          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id="69de5eba9f3b6f02617c0605"
-          async
-        />
       </body>
+      {/* GHL Chat Widget — loads last, after page is interactive */}
+      <Script
+        id="ghl-chat-widget"
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+        data-widget-id="69de5eba9f3b6f02617c0605"
+        strategy="lazyOnload"
+      />
     </html>
   );
 }
