@@ -38,7 +38,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="text-cream-100 font-bold text-base tracking-wide leading-none">
-                  MED VEST
+                  Medvst
                 </span>
                 <span className="text-cream-500 text-[10px] tracking-wider uppercase leading-none mt-0.5">
                   {meta("tagline")}

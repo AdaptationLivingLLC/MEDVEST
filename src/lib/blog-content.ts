@@ -1,5 +1,5 @@
 // =============================================================================
-// MED VEST — Blog Content Data
+// Medvst — Blog Content Data
 // 5 initial blog articles, bilingual EN/ES
 // =============================================================================
 
@@ -28,7 +28,7 @@ export const blogArticles: BlogArticle[] = [
     category: 'MSA Basics',
     readingTime: 6,
     publishDate: '2026-04-01',
-    author: 'MED VEST',
+    author: 'Medvst',
     content: `If you have recently settled an injury claim — or you are in the process of settling one — you may have heard the term "Medicare Set-Aside." It might sound complicated, but the concept is actually straightforward once you understand the basics. This article explains what a Medicare Set-Aside is, why it exists, and what it means for you and your settlement.
 
 ## What Is a Medicare Set-Aside?
@@ -72,7 +72,7 @@ When an MSA is part of your settlement, here is what typically happens:
 
 This is where things get serious. If your MSA is not managed properly — for example, if you spend the money on non-medical expenses, fail to keep records, or do not file the required reports — Medicare can refuse to pay for your injury-related medical care. This can leave you paying for medical treatment out of your own pocket, which can be extremely costly.
 
-This is why professional MSA administration is so valuable. A company like MED VEST handles all the details — paying bills, keeping records, filing reports — so you do not have to worry about making a mistake that could cost you your Medicare benefits.
+This is why professional MSA administration is so valuable. A company like Medvst handles all the details — paying bills, keeping records, filing reports — so you do not have to worry about making a mistake that could cost you your Medicare benefits.
 
 ## Professional Administration vs. Self-Administration
 
@@ -80,9 +80,9 @@ You do have the option to administer your MSA on your own. However, most people 
 
 Professional administration takes that burden off your shoulders. Your MSA administrator manages the account, reviews and pays your medical bills, maintains detailed records, and handles all communication with CMS. You can focus on your health and your life, knowing your MSA — and your Medicare benefits — are in good hands.
 
-## How MED VEST Can Help
+## How Medvst Can Help
 
-At MED VEST, we specialize in Medicare Set-Aside administration. We help individuals and families across all 50 states manage their MSA funds with care, accuracy, and full compliance. Whether you need help understanding whether an MSA is required for your case, or you are ready to have your MSA professionally administered, we are here to help.
+At Medvst, we specialize in Medicare Set-Aside administration. We help individuals and families across all 50 states manage their MSA funds with care, accuracy, and full compliance. Whether you need help understanding whether an MSA is required for your case, or you are ready to have your MSA professionally administered, we are here to help.
 
 Contact us today at (818) 674-1211 or visit medvst.com for a free consultation. We will explain everything in plain language and help you protect your settlement and your future.`,
     contentEs: `Si recientemente ha resuelto un reclamo por lesiones — o esta en proceso de hacerlo — es posible que haya escuchado el termino "Medicare Set-Aside." Puede sonar complicado, pero el concepto es bastante sencillo una vez que entiende los fundamentos. Este articulo explica que es un Medicare Set-Aside, por que existe y que significa para usted y su acuerdo.
@@ -128,7 +128,7 @@ Cuando un MSA es parte de su acuerdo, esto es lo que tipicamente sucede:
 
 Aqui es donde las cosas se ponen serias. Si su MSA no se administra adecuadamente — por ejemplo, si gasta el dinero en gastos no medicos, no mantiene registros adecuados o no presenta los informes requeridos — Medicare puede negarse a pagar por su atencion medica relacionada con la lesion. Esto puede dejarlo pagando el tratamiento medico de su propio bolsillo, lo cual puede ser extremadamente costoso.
 
-Es por eso que la administracion profesional del MSA es tan valiosa. Una empresa como MED VEST maneja todos los detalles — pagando facturas, manteniendo registros, presentando informes — para que usted no tenga que preocuparse por cometer un error que podria costarle sus beneficios de Medicare.
+Es por eso que la administracion profesional del MSA es tan valiosa. Una empresa como Medvst maneja todos los detalles — pagando facturas, manteniendo registros, presentando informes — para que usted no tenga que preocuparse por cometer un error que podria costarle sus beneficios de Medicare.
 
 ## Administracion Profesional vs. Auto-Administracion
 
@@ -136,9 +136,9 @@ Usted tiene la opcion de administrar su MSA por su cuenta. Sin embargo, la mayor
 
 La administracion profesional le quita esa carga de encima. Su administrador de MSA maneja la cuenta, revisa y paga sus facturas medicas, mantiene registros detallados y maneja toda la comunicacion con CMS. Usted puede concentrarse en su salud y su vida, sabiendo que su MSA — y sus beneficios de Medicare — estan en buenas manos.
 
-## Como Puede Ayudar MED VEST
+## Como Puede Ayudar Medvst
 
-En MED VEST, nos especializamos en la administracion de Medicare Set-Aside. Ayudamos a personas y familias en los 50 estados a administrar sus fondos MSA con cuidado, precision y cumplimiento total. Ya sea que necesite ayuda para entender si se requiere un MSA para su caso, o este listo para que su MSA sea administrado profesionalmente, estamos aqui para ayudar.
+En Medvst, nos especializamos en la administracion de Medicare Set-Aside. Ayudamos a personas y familias en los 50 estados a administrar sus fondos MSA con cuidado, precision y cumplimiento total. Ya sea que necesite ayuda para entender si se requiere un MSA para su caso, o este listo para que su MSA sea administrado profesionalmente, estamos aqui para ayudar.
 
 Contactenos hoy al (818) 674-1211 o visite medvst.com para una consulta gratuita. Le explicaremos todo en un lenguaje sencillo y le ayudaremos a proteger su acuerdo y su futuro.`,
   },
@@ -153,7 +153,7 @@ Contactenos hoy al (818) 674-1211 o visite medvst.com para una consulta gratuita
     category: 'MSA Administration',
     readingTime: 7,
     publishDate: '2026-04-03',
-    author: 'MED VEST',
+    author: 'Medvst',
     content: `You have settled your injury claim and part of your settlement has been allocated to a Medicare Set-Aside (MSA). Now what? How does the MSA actually get managed, and what does professional administration look like in practice? This guide walks you through the entire MSA administration process so you know exactly what to expect.
 
 ## What MSA Administration Means
@@ -168,7 +168,7 @@ The first thing a professional administrator does is set up a dedicated account 
 
 Your administrator will also register your MSA with CMS, which involves providing information about your settlement, your MSA allocation, and the administrator who will be managing the account. This registration puts CMS on notice that your MSA is being professionally managed.
 
-At MED VEST, we also set up your online client portal at this stage, giving you 24/7 access to your account information from day one.
+At Medvst, we also set up your online client portal at this stage, giving you 24/7 access to your account information from day one.
 
 ## Step 2: Medical Bill Review and Payment
 
@@ -186,7 +186,7 @@ Detailed record keeping is essential to MSA administration. Your administrator m
 
 Good records serve two purposes. First, they are required for the annual reports that must be filed with CMS. Second, they protect you. If CMS ever questions how your MSA funds were used, your records provide the evidence that everything was handled correctly.
 
-Professional administrators use specialized systems to track and organize these records. At MED VEST, all records are maintained digitally and are accessible to you through your client portal.
+Professional administrators use specialized systems to track and organize these records. At Medvst, all records are maintained digitally and are accessible to you through your client portal.
 
 ## Step 4: Annual Attestation Reporting
 
@@ -218,9 +218,9 @@ Self-administering an MSA is technically allowed, but the process is complex and
 
 Any of these mistakes can jeopardize your Medicare benefits. Professional administration eliminates these risks. Your administrator has the expertise, systems, and processes to handle everything correctly from start to finish.
 
-## Getting Started with MED VEST
+## Getting Started with Medvst
 
-MED VEST provides comprehensive MSA administration services for clients across all 50 states. We handle every aspect of administration — from account setup to annual reporting to MSA exhaustion — with full transparency and a personal touch.
+Medvst provides comprehensive MSA administration services for clients across all 50 states. We handle every aspect of administration — from account setup to annual reporting to MSA exhaustion — with full transparency and a personal touch.
 
 Our bilingual team is here to answer your questions in English or Spanish. Call us at (818) 674-1211 or visit medvst.com to schedule your free consultation. We will walk you through the process and show you how easy it can be to protect your settlement and your Medicare benefits.`,
     contentEs: `Ha resuelto su reclamo por lesiones y parte de su acuerdo se ha asignado a un Medicare Set-Aside (MSA). Y ahora que? Como se administra realmente el MSA, y como se ve la administracion profesional en la practica? Esta guia lo lleva a traves de todo el proceso de administracion MSA para que sepa exactamente que esperar.
@@ -237,7 +237,7 @@ Lo primero que hace un administrador profesional es configurar una cuenta dedica
 
 Su administrador tambien registrara su MSA con CMS, lo que implica proporcionar informacion sobre su acuerdo, su asignacion MSA y el administrador que gestionara la cuenta. Este registro pone a CMS al tanto de que su MSA esta siendo administrado profesionalmente.
 
-En MED VEST, tambien configuramos su portal de cliente en linea en esta etapa, dandole acceso 24/7 a la informacion de su cuenta desde el primer dia.
+En Medvst, tambien configuramos su portal de cliente en linea en esta etapa, dandole acceso 24/7 a la informacion de su cuenta desde el primer dia.
 
 ## Paso 2: Revision y Pago de Facturas Medicas
 
@@ -255,7 +255,7 @@ El mantenimiento detallado de registros es esencial para la administracion MSA. 
 
 Los buenos registros sirven para dos propositos. Primero, son necesarios para los informes anuales que deben presentarse a CMS. Segundo, lo protegen a usted. Si CMS alguna vez cuestiona como se utilizaron sus fondos MSA, sus registros proporcionan la evidencia de que todo se manejo correctamente.
 
-Los administradores profesionales usan sistemas especializados para rastrear y organizar estos registros. En MED VEST, todos los registros se mantienen digitalmente y son accesibles para usted a traves de su portal de cliente.
+Los administradores profesionales usan sistemas especializados para rastrear y organizar estos registros. En Medvst, todos los registros se mantienen digitalmente y son accesibles para usted a traves de su portal de cliente.
 
 ## Paso 4: Informes de Atestacion Anuales
 
@@ -287,9 +287,9 @@ Auto-administrar un MSA esta tecnicamente permitido, pero el proceso es complejo
 
 Cualquiera de estos errores puede poner en peligro sus beneficios de Medicare. La administracion profesional elimina estos riesgos. Su administrador tiene la experiencia, los sistemas y los procesos para manejar todo correctamente de principio a fin.
 
-## Comenzando con MED VEST
+## Comenzando con Medvst
 
-MED VEST proporciona servicios integrales de administracion MSA para clientes en los 50 estados. Manejamos cada aspecto de la administracion — desde la configuracion de la cuenta hasta los informes anuales y el agotamiento del MSA — con total transparencia y un toque personal.
+Medvst proporciona servicios integrales de administracion MSA para clientes en los 50 estados. Manejamos cada aspecto de la administracion — desde la configuracion de la cuenta hasta los informes anuales y el agotamiento del MSA — con total transparencia y un toque personal.
 
 Nuestro equipo bilingue esta aqui para responder sus preguntas en ingles o espanol. Llamenos al (818) 674-1211 o visite medvst.com para programar su consulta gratuita. Le guiaremos a traves del proceso y le mostraremos lo facil que puede ser proteger su acuerdo y sus beneficios de Medicare.`,
   },
@@ -304,7 +304,7 @@ Nuestro equipo bilingue esta aqui para responder sus preguntas en ingles o espan
     category: 'Lien Resolution',
     readingTime: 6,
     publishDate: '2026-04-05',
-    author: 'MED VEST',
+    author: 'Medvst',
     content: `If you are settling an injury claim and Medicare has paid for any of your medical treatment, there is something important you need to know about: Medicare liens. A Medicare lien can take a significant portion of your settlement if you are not prepared. But with the right help, you can often reduce the amount you owe and keep more of your money. Here is what you need to understand.
 
 ## What Is a Medicare Lien?
@@ -351,7 +351,7 @@ Here is how professional lien resolution typically works:
 
 Dealing with Medicare liens is not straightforward. The BCRC can be difficult to reach, the conditional payment summaries can contain errors, and the rules for what can and cannot be disputed are complex. Missing deadlines or failing to respond properly to Medicare's demands can result in penalties or additional interest.
 
-Professional lien resolution saves you time, stress, and often a significant amount of money. At MED VEST, our team has resolved thousands of Medicare liens. We know the process inside and out, and we fight to get your lien reduced to the lowest legitimate amount.
+Professional lien resolution saves you time, stress, and often a significant amount of money. At Medvst, our team has resolved thousands of Medicare liens. We know the process inside and out, and we fight to get your lien reduced to the lowest legitimate amount.
 
 ## Common Questions About Medicare Liens
 
@@ -361,9 +361,9 @@ Professional lien resolution saves you time, stress, and often a significant amo
 
 **Does the lien need to be resolved before I get my settlement money?** In most cases, yes. The lien should be resolved as part of the settlement process to avoid complications.
 
-## How MED VEST Can Help
+## How Medvst Can Help
 
-MED VEST provides comprehensive Medicare lien resolution services. We obtain your conditional payment records, review every charge, dispute errors, negotiate reductions, and coordinate final payment — all on your behalf. Our goal is to help you keep as much of your settlement as possible while meeting your obligations to Medicare.
+Medvst provides comprehensive Medicare lien resolution services. We obtain your conditional payment records, review every charge, dispute errors, negotiate reductions, and coordinate final payment — all on your behalf. Our goal is to help you keep as much of your settlement as possible while meeting your obligations to Medicare.
 
 Contact us at (818) 674-1211 or visit medvst.com for a free consultation. We will review your lien situation and explain how we can help.`,
     contentEs: `Si esta resolviendo un reclamo por lesiones y Medicare ha pagado parte de su tratamiento medico, hay algo importante que necesita saber: los gravamenes de Medicare. Un gravamen de Medicare puede tomar una porcion significativa de su acuerdo si no esta preparado. Pero con la ayuda correcta, a menudo puede reducir la cantidad que debe y quedarse con mas de su dinero. Esto es lo que necesita entender.
@@ -412,7 +412,7 @@ Asi es como funciona tipicamente la resolucion profesional de gravamenes:
 
 Lidiar con gravamenes de Medicare no es sencillo. El BCRC puede ser dificil de contactar, los resumenes de pagos condicionales pueden contener errores y las reglas sobre que se puede y no se puede disputar son complejas. Perder plazos o no responder adecuadamente a las demandas de Medicare puede resultar en penalidades o intereses adicionales.
 
-La resolucion profesional de gravamenes le ahorra tiempo, estres y a menudo una cantidad significativa de dinero. En MED VEST, nuestro equipo ha resuelto miles de gravamenes de Medicare. Conocemos el proceso de principio a fin y luchamos para que su gravamen se reduzca al monto legitimo mas bajo.
+La resolucion profesional de gravamenes le ahorra tiempo, estres y a menudo una cantidad significativa de dinero. En Medvst, nuestro equipo ha resuelto miles de gravamenes de Medicare. Conocemos el proceso de principio a fin y luchamos para que su gravamen se reduzca al monto legitimo mas bajo.
 
 ## Preguntas Comunes Sobre Gravamenes de Medicare
 
@@ -422,9 +422,9 @@ La resolucion profesional de gravamenes le ahorra tiempo, estres y a menudo una 
 
 **Necesita resolverse el gravamen antes de que reciba el dinero de mi acuerdo?** En la mayoria de los casos, si. El gravamen debe resolverse como parte del proceso de acuerdo para evitar complicaciones.
 
-## Como Puede Ayudar MED VEST
+## Como Puede Ayudar Medvst
 
-MED VEST proporciona servicios integrales de resolucion de gravamenes de Medicare. Obtenemos sus registros de pagos condicionales, revisamos cada cargo, disputamos errores, negociamos reducciones y coordinamos el pago final — todo en su nombre. Nuestro objetivo es ayudarle a quedarse con la mayor cantidad posible de su acuerdo mientras cumple con sus obligaciones hacia Medicare.
+Medvst proporciona servicios integrales de resolucion de gravamenes de Medicare. Obtenemos sus registros de pagos condicionales, revisamos cada cargo, disputamos errores, negociamos reducciones y coordinamos el pago final — todo en su nombre. Nuestro objetivo es ayudarle a quedarse con la mayor cantidad posible de su acuerdo mientras cumple con sus obligaciones hacia Medicare.
 
 Contactenos al (818) 674-1211 o visite medvst.com para una consulta gratuita. Revisaremos su situacion de gravamen y le explicaremos como podemos ayudar.`,
   },
@@ -439,7 +439,7 @@ Contactenos al (818) 674-1211 o visite medvst.com para una consulta gratuita. Re
     category: 'Settlement Planning',
     readingTime: 6,
     publishDate: '2026-04-07',
-    author: 'MED VEST',
+    author: 'Medvst',
     content: `Settling an injury claim can feel like the end of a long, difficult road. But for many people, the settlement is actually the beginning of a new set of decisions — decisions that can have a lasting impact on your healthcare and financial security. This is especially true if you are on Medicare or expect to be in the near future. Settlement consulting helps you navigate these decisions so you can protect your benefits and your money for the long term.
 
 ## What Is Settlement Consulting?
@@ -505,9 +505,9 @@ We sometimes hear from people who skipped the consulting step and later ran into
 
 These problems are stressful, costly, and often preventable. A small investment in expert consulting can save you from much larger problems down the road.
 
-## How MED VEST Helps
+## How Medvst Helps
 
-At MED VEST, settlement consulting is one of our core services. We work with individuals and families across all 50 states to make sure their settlements are structured and managed correctly. We explain everything in plain language, answer every question, and provide hands-on support throughout the process.
+At Medvst, settlement consulting is one of our core services. We work with individuals and families across all 50 states to make sure their settlements are structured and managed correctly. We explain everything in plain language, answer every question, and provide hands-on support throughout the process.
 
 Whether your settlement is $50,000 or $5 million, we give you the same level of care and attention. Your settlement represents your future security, and we take that seriously.
 
@@ -577,9 +577,9 @@ A veces escuchamos de personas que se saltaron el paso de consultoria y luego tu
 
 Estos problemas son estresantes, costosos y a menudo prevenibles. Una pequena inversion en consultoria experta puede ahorrarle problemas mucho mayores en el futuro.
 
-## Como Ayuda MED VEST
+## Como Ayuda Medvst
 
-En MED VEST, la consultoria de acuerdos es uno de nuestros servicios principales. Trabajamos con personas y familias en los 50 estados para asegurarnos de que sus acuerdos esten estructurados y administrados correctamente. Explicamos todo en un lenguaje sencillo, respondemos cada pregunta y brindamos apoyo practico durante todo el proceso.
+En Medvst, la consultoria de acuerdos es uno de nuestros servicios principales. Trabajamos con personas y familias en los 50 estados para asegurarnos de que sus acuerdos esten estructurados y administrados correctamente. Explicamos todo en un lenguaje sencillo, respondemos cada pregunta y brindamos apoyo practico durante todo el proceso.
 
 Ya sea que su acuerdo sea de $50,000 o $5 millones, le damos el mismo nivel de cuidado y atencion. Su acuerdo representa su seguridad futura, y nos tomamos eso en serio.
 
@@ -596,7 +596,7 @@ Llamenos al (818) 674-1211 o visite medvst.com para su consulta gratuita. Permit
     category: 'Your Rights',
     readingTime: 7,
     publishDate: '2026-04-10',
-    author: 'MED VEST',
+    author: 'Medvst',
     content: `Receiving an injury settlement can be life-changing. After weeks, months, or even years of dealing with an injury, medical treatment, and legal proceedings, you finally have a settlement that is meant to help you move forward. But along with that settlement come responsibilities — and rights. Understanding your rights as a settlement recipient is essential to protecting your money and your future healthcare.
 
 ## Your Right to Understand Your Settlement
@@ -605,7 +605,7 @@ First and foremost, you have the right to fully understand your settlement. This
 
 If anything about your settlement is unclear, you have the right to ask questions and get clear answers. Do not sign anything you do not understand. Your attorney should explain every component of the settlement, and if there are Medicare-related aspects, a settlement consultant can help explain those in plain language.
 
-At MED VEST, we believe that understanding is the foundation of good decision-making. We take the time to explain every aspect of the Medicare-related portions of your settlement in terms you can understand.
+At Medvst, we believe that understanding is the foundation of good decision-making. We take the time to explain every aspect of the Medicare-related portions of your settlement in terms you can understand.
 
 ## Your Right to Choose Your MSA Administrator
 
@@ -623,7 +623,7 @@ You have the right to request a detailed conditional payment summary from the Be
 
 You also have the right to a procurement cost reduction, which reduces the lien proportionally based on the attorney fees and costs you paid to obtain your settlement.
 
-Professional lien resolution services, like those offered by MED VEST, can help you exercise these rights effectively. We review every charge, identify errors, file disputes, and negotiate on your behalf to reduce your lien to the correct amount.
+Professional lien resolution services, like those offered by Medvst, can help you exercise these rights effectively. We review every charge, identify errors, file disputes, and negotiate on your behalf to reduce your lien to the correct amount.
 
 ## Your Right to Continue Choosing Your Doctors
 
@@ -637,7 +637,7 @@ Before you agree to any MSA administration, lien resolution, or consulting servi
 
 Ask questions about fees before signing any agreement. Understand what is included in the fee, whether there are any additional charges, and how the fees are structured (flat fee, percentage, etc.). You should never be surprised by charges after the fact.
 
-At MED VEST, we are committed to full transparency. We explain all our fees during the initial consultation, and we put everything in writing. You will know exactly what you are paying for before we begin working together.
+At Medvst, we are committed to full transparency. We explain all our fees during the initial consultation, and we put everything in writing. You will know exactly what you are paying for before we begin working together.
 
 ## Your Right to Access Your Account Information
 
@@ -645,7 +645,7 @@ If your MSA is being professionally administered, you have the right to access y
 
 A good administrator makes this information readily available — ideally through a secure online portal where you can log in and view your account whenever you want. You should never have to beg for information about your own money.
 
-MED VEST provides every client with a secure online portal where they can view their MSA balance, review payments, download documents, and communicate with our team. Your money, your information — always accessible to you.
+Medvst provides every client with a secure online portal where they can view their MSA balance, review payments, download documents, and communicate with our team. Your money, your information — always accessible to you.
 
 ## Your Right to File Complaints
 
@@ -663,13 +663,13 @@ You have the right to know how your information is being used, who has access to
 
 ## Your Right to Bilingual Services
 
-If English is not your primary language, you have the right to receive services in a language you understand. At MED VEST, we provide full bilingual services in English and Spanish because we believe everyone deserves to understand what is happening with their settlement.
+If English is not your primary language, you have the right to receive services in a language you understand. At Medvst, we provide full bilingual services in English and Spanish because we believe everyone deserves to understand what is happening with their settlement.
 
 ## Protecting Your Rights — and Your Future
 
 Your injury settlement is meant to support your recovery and your future. Understanding your rights helps you make sure that happens. Do not be afraid to ask questions, seek expert help, and advocate for yourself.
 
-If you have questions about your rights as a settlement recipient, MED VEST is here to help. Contact us at (818) 674-1211 or visit medvst.com for a free, no-obligation consultation. We will take the time to answer your questions and help you understand your options — in plain language, with no pressure.`,
+If you have questions about your rights as a settlement recipient, Medvst is here to help. Contact us at (818) 674-1211 or visit medvst.com for a free, no-obligation consultation. We will take the time to answer your questions and help you understand your options — in plain language, with no pressure.`,
     contentEs: `Recibir un acuerdo por lesiones puede cambiar su vida. Despues de semanas, meses o incluso anos de lidiar con una lesion, tratamiento medico y procedimientos legales, finalmente tiene un acuerdo que esta destinado a ayudarle a seguir adelante. Pero junto con ese acuerdo vienen responsabilidades — y derechos. Entender sus derechos como beneficiario de un acuerdo es esencial para proteger su dinero y su futura atencion medica.
 
 ## Su Derecho a Entender Su Acuerdo
@@ -678,7 +678,7 @@ Ante todo, tiene derecho a entender completamente su acuerdo. Esto significa ent
 
 Si algo sobre su acuerdo no esta claro, tiene derecho a hacer preguntas y obtener respuestas claras. No firme nada que no entienda. Su abogado deberia explicar cada componente del acuerdo, y si hay aspectos relacionados con Medicare, un consultor de acuerdos puede ayudar a explicarlos en un lenguaje sencillo.
 
-En MED VEST, creemos que la comprension es la base de una buena toma de decisiones. Nos tomamos el tiempo para explicar cada aspecto de las porciones relacionadas con Medicare de su acuerdo en terminos que pueda entender.
+En Medvst, creemos que la comprension es la base de una buena toma de decisiones. Nos tomamos el tiempo para explicar cada aspecto de las porciones relacionadas con Medicare de su acuerdo en terminos que pueda entender.
 
 ## Su Derecho a Elegir Su Administrador de MSA
 
@@ -696,7 +696,7 @@ Tiene derecho a solicitar un resumen detallado de pagos condicionales del Centro
 
 Tambien tiene derecho a una reduccion por costos de adquisicion, que reduce el gravamen proporcionalmente basandose en los honorarios de abogados y costos que pago para obtener su acuerdo.
 
-Los servicios profesionales de resolucion de gravamenes, como los ofrecidos por MED VEST, pueden ayudarle a ejercer estos derechos de manera efectiva. Revisamos cada cargo, identificamos errores, presentamos disputas y negociamos en su nombre para reducir su gravamen al monto correcto.
+Los servicios profesionales de resolucion de gravamenes, como los ofrecidos por Medvst, pueden ayudarle a ejercer estos derechos de manera efectiva. Revisamos cada cargo, identificamos errores, presentamos disputas y negociamos en su nombre para reducir su gravamen al monto correcto.
 
 ## Su Derecho a Continuar Eligiendo Sus Medicos
 
@@ -710,7 +710,7 @@ Antes de aceptar cualquier servicio de administracion MSA, resolucion de gravame
 
 Haga preguntas sobre las tarifas antes de firmar cualquier acuerdo. Entienda que esta incluido en la tarifa, si hay cargos adicionales y como se estructuran las tarifas (tarifa fija, porcentaje, etc.). Nunca deberia sorprenderse con cargos despues del hecho.
 
-En MED VEST, estamos comprometidos con la transparencia total. Explicamos todas nuestras tarifas durante la consulta inicial y ponemos todo por escrito. Sabra exactamente por que esta pagando antes de que comencemos a trabajar juntos.
+En Medvst, estamos comprometidos con la transparencia total. Explicamos todas nuestras tarifas durante la consulta inicial y ponemos todo por escrito. Sabra exactamente por que esta pagando antes de que comencemos a trabajar juntos.
 
 ## Su Derecho a Acceder a la Informacion de Su Cuenta
 
@@ -718,7 +718,7 @@ Si su MSA esta siendo administrado profesionalmente, tiene derecho a acceder a l
 
 Un buen administrador hace que esta informacion este facilmente disponible — idealmente a traves de un portal seguro en linea donde pueda iniciar sesion y ver su cuenta cuando quiera. Nunca deberia tener que rogar por informacion sobre su propio dinero.
 
-MED VEST proporciona a cada cliente un portal seguro en linea donde pueden ver su saldo MSA, revisar pagos, descargar documentos y comunicarse con nuestro equipo. Su dinero, su informacion — siempre accesible para usted.
+Medvst proporciona a cada cliente un portal seguro en linea donde pueden ver su saldo MSA, revisar pagos, descargar documentos y comunicarse con nuestro equipo. Su dinero, su informacion — siempre accesible para usted.
 
 ## Su Derecho a Presentar Quejas
 
@@ -736,13 +736,13 @@ Tiene derecho a saber como se esta utilizando su informacion, quien tiene acceso
 
 ## Su Derecho a Servicios Bilingues
 
-Si el ingles no es su idioma principal, tiene derecho a recibir servicios en un idioma que entienda. En MED VEST, proporcionamos servicios bilingues completos en ingles y espanol porque creemos que todos merecen entender lo que esta sucediendo con su acuerdo.
+Si el ingles no es su idioma principal, tiene derecho a recibir servicios en un idioma que entienda. En Medvst, proporcionamos servicios bilingues completos en ingles y espanol porque creemos que todos merecen entender lo que esta sucediendo con su acuerdo.
 
 ## Protegiendo Sus Derechos — y Su Futuro
 
 Su acuerdo por lesiones esta destinado a apoyar su recuperacion y su futuro. Entender sus derechos le ayuda a asegurar que eso suceda. No tenga miedo de hacer preguntas, buscar ayuda experta y abogar por usted mismo.
 
-Si tiene preguntas sobre sus derechos como beneficiario de un acuerdo, MED VEST esta aqui para ayudar. Contactenos al (818) 674-1211 o visite medvst.com para una consulta gratuita y sin obligacion. Nos tomaremos el tiempo para responder sus preguntas y ayudarle a entender sus opciones — en un lenguaje sencillo, sin presion.`,
+Si tiene preguntas sobre sus derechos como beneficiario de un acuerdo, Medvst esta aqui para ayudar. Contactenos al (818) 674-1211 o visite medvst.com para una consulta gratuita y sin obligacion. Nos tomaremos el tiempo para responder sus preguntas y ayudarle a entender sus opciones — en un lenguaje sencillo, sin presion.`,
   },
 ];
 

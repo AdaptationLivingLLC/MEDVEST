@@ -68,15 +68,15 @@ export const testimonials: Testimonial[] = [
     rating: 5,
   },
   {
-    quote: "Med Vest saved my family over $340,000 in unnecessary Medicare liens. They fought for us when no one else would.",
-    quoteEs: "Med Vest le ahorró a mi familia más de $340,000 en gravámenes innecesarios de Medicare. Lucharon por nosotros cuando nadie más lo haría.",
+    quote: "Medvst saved my family over $340,000 in unnecessary Medicare liens. They fought for us when no one else would.",
+    quoteEs: "Medvst le ahorró a mi familia más de $340,000 en gravámenes innecesarios de Medicare. Lucharon por nosotros cuando nadie más lo haría.",
     name: "Carlos R.",
     location: "San Fernando Valley, CA",
     rating: 5,
   },
   {
-    quote: "I was so overwhelmed until I found Med Vest. They explained everything in plain English and took over completely. I could finally breathe.",
-    quoteEs: "Estaba tan abrumada hasta que encontré Med Vest. Me explicaron todo en términos sencillos y se hicieron cargo completamente. Finalmente pude respirar.",
+    quote: "I was so overwhelmed until I found Medvst. They explained everything in plain English and took over completely. I could finally breathe.",
+    quoteEs: "Estaba tan abrumada hasta que encontré Medvst. Me explicaron todo en términos sencillos y se hicieron cargo completamente. Finalmente pude respirar.",
     name: "Sandra M.",
     location: "Van Nuys, CA",
     rating: 5,
@@ -119,7 +119,7 @@ export const homeFAQs: FAQItem[] = [
   {
     question: "Do you serve clients outside California?",
     questionEs: "¿Atienden clientes fuera de California?",
-    answer: "Yes! MED VEST serves clients in all 50 states. Medicare Set-Aside administration is governed by federal regulations, and our team has expertise handling cases nationwide regardless of your location.",
-    answerEs: "¡Sí! MED VEST atiende clientes en los 50 estados. La administración de Medicare Set-Aside se rige por regulaciones federales, y nuestro equipo tiene experiencia manejando casos en todo el país independientemente de su ubicación.",
+    answer: "Yes! Medvst serves clients in all 50 states. Medicare Set-Aside administration is governed by federal regulations, and our team has expertise handling cases nationwide regardless of your location.",
+    answerEs: "¡Sí! Medvst atiende clientes en los 50 estados. La administración de Medicare Set-Aside se rige por regulaciones federales, y nuestro equipo tiene experiencia manejando casos en todo el país independientemente de su ubicación.",
   },
 ];

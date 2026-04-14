@@ -41,7 +41,7 @@ export default async function ContactPage({ params }: Props) {
   const contactPageLd = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    name: isEs ? "Contactenos - MED VEST" : "Contact Us - MED VEST",
+    name: isEs ? "Contactenos - Medvst" : "Contact Us - Medvst",
     url: `${businessInfo.url}/${locale}/contact`,
     mainEntity: {
       "@type": "LocalBusiness",

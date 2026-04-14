@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: isEs
-      ? "MED VEST | Expertos en Medicare Set-Aside — Administración, Gravámenes y Consultoría"
-      : "MED VEST | Medicare Set-Aside Experts — Administration, Liens & Consulting",
+      ? "Medvst | Expertos en Medicare Set-Aside — Administración, Gravámenes y Consultoría"
+      : "Medvst | Medicare Set-Aside Experts — Administration, Liens & Consulting",
     description: isEs
       ? "Administración experta de Medicare Set-Aside para familias en todo el país. Más de $500M administrados. 100% cumplimiento CMS. Consulta gratuita."
       : "Expert Medicare Set-Aside administration for families nationwide. $500M+ administered. 100% CMS compliance. Free consultation.",
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       languages: { en: "/en", es: "/es" },
     },
     openGraph: {
-      title: "MED VEST | Medicare Set-Aside Experts",
+      title: "Medvst | Medicare Set-Aside Experts",
       description:
         "Expert MSA administration, lien resolution, and settlement consulting. Protecting families nationwide.",
       url: `https://medvst.com/${locale}`,
@@ -48,7 +48,7 @@ export default async function HomePage({ params }: Props) {
   const organizationLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "MED VEST",
+    name: "Medvst",
     url: "https://medvst.com",
     logo: "https://medvst.com/images/logo.png",
     description:
@@ -69,7 +69,7 @@ export default async function HomePage({ params }: Props) {
   const localBusinessLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "MED VEST",
+    name: "Medvst",
     image: "https://medvst.com/images/logo.png",
     url: "https://medvst.com",
     telephone: "+18186741211",
@@ -108,7 +108,7 @@ export default async function HomePage({ params }: Props) {
   const websiteLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "MED VEST",
+    name: "Medvst",
     url: "https://medvst.com",
     inLanguage: [isEs ? "es" : "en"],
   };

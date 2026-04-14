@@ -1,5 +1,5 @@
 // =============================================================================
-// MED VEST — Site Content Data
+// Medvst — Site Content Data
 // All page content as typed TypeScript objects, bilingual EN/ES
 // =============================================================================
 
@@ -86,8 +86,8 @@ export interface PortalFeature {
 // -----------------------------------------------------------------------------
 
 export const businessInfo = {
-  name: 'MED VEST',
-  legalName: 'MED VEST',
+  name: 'Medvst',
+  legalName: 'Medvst',
   address: {
     street: 'PO Box 8294',
     city: 'Van Nuys',
@@ -117,12 +117,12 @@ export const businessInfo = {
 export const aboutContent = {
   seo: {
     title: {
-      en: 'About MED VEST | Medicare Set-Aside Administration',
-      es: 'Sobre MED VEST | Administracion de Medicare Set-Aside',
+      en: 'About Medvst | Medicare Set-Aside Administration',
+      es: 'Sobre Medvst | Administracion de Medicare Set-Aside',
     },
     description: {
-      en: 'Learn about MED VEST, a nationwide Medicare Set-Aside administration company helping injured individuals protect their settlements and Medicare benefits.',
-      es: 'Conozca MED VEST, una empresa nacional de administracion de Medicare Set-Aside que ayuda a personas lesionadas a proteger sus acuerdos y beneficios de Medicare.',
+      en: 'Learn about Medvst, a nationwide Medicare Set-Aside administration company helping injured individuals protect their settlements and Medicare benefits.',
+      es: 'Conozca Medvst, una empresa nacional de administracion de Medicare Set-Aside que ayuda a personas lesionadas a proteger sus acuerdos y beneficios de Medicare.',
     },
   },
 
@@ -132,21 +132,21 @@ export const aboutContent = {
       es: 'Protegemos Lo Que Mas Importa: Su Acuerdo y Su Futuro',
     },
     subheadline: {
-      en: 'MED VEST helps injured individuals and their families navigate Medicare Set-Asides, liens, and settlement administration with care and expertise.',
-      es: 'MED VEST ayuda a personas lesionadas y sus familias a navegar los Medicare Set-Asides, gravamenes y administracion de acuerdos con cuidado y experiencia.',
+      en: 'Medvst helps injured individuals and their families navigate Medicare Set-Asides, liens, and settlement administration with care and expertise.',
+      es: 'Medvst ayuda a personas lesionadas y sus familias a navegar los Medicare Set-Asides, gravamenes y administracion de acuerdos con cuidado y experiencia.',
     },
   },
 
   story: {
     en: [
-      'MED VEST was founded on a simple belief: people who have been injured and received a settlement deserve clear, honest guidance about how to protect their money and their Medicare benefits. Too often, individuals are left confused by complicated government rules, unsure whether they are doing the right thing with their settlement funds. We started MED VEST to change that.',
+      'Medvst was founded on a simple belief: people who have been injured and received a settlement deserve clear, honest guidance about how to protect their money and their Medicare benefits. Too often, individuals are left confused by complicated government rules, unsure whether they are doing the right thing with their settlement funds. We started Medvst to change that.',
       'Our founder, Shahpoor, saw firsthand how families struggled to understand Medicare Set-Asides, liens, and compliance requirements after settling an injury claim. The paperwork was overwhelming. The language was confusing. And the consequences of making a mistake were serious — including losing access to Medicare coverage. He knew there had to be a better way to help people through this process.',
-      'Today, MED VEST serves families across all 50 states. We handle the complex paperwork, communicate with Medicare and CMS on your behalf, and make sure your settlement funds are managed correctly. We speak your language — both literally, with full services in English and Spanish, and figuratively, by explaining everything in plain terms you can understand. Your peace of mind is our priority.',
+      'Today, Medvst serves families across all 50 states. We handle the complex paperwork, communicate with Medicare and CMS on your behalf, and make sure your settlement funds are managed correctly. We speak your language — both literally, with full services in English and Spanish, and figuratively, by explaining everything in plain terms you can understand. Your peace of mind is our priority.',
     ],
     es: [
-      'MED VEST fue fundada con una creencia simple: las personas que han sido lesionadas y recibieron un acuerdo merecen una orientacion clara y honesta sobre como proteger su dinero y sus beneficios de Medicare. Con demasiada frecuencia, las personas quedan confundidas por las complicadas reglas del gobierno, sin saber si estan haciendo lo correcto con los fondos de su acuerdo. Creamos MED VEST para cambiar eso.',
+      'Medvst fue fundada con una creencia simple: las personas que han sido lesionadas y recibieron un acuerdo merecen una orientacion clara y honesta sobre como proteger su dinero y sus beneficios de Medicare. Con demasiada frecuencia, las personas quedan confundidas por las complicadas reglas del gobierno, sin saber si estan haciendo lo correcto con los fondos de su acuerdo. Creamos Medvst para cambiar eso.',
       'Nuestro fundador, Shahpoor, vio de primera mano como las familias luchaban por entender los Medicare Set-Asides, los gravamenes y los requisitos de cumplimiento despues de resolver un reclamo por lesiones. El papeleo era abrumador. El lenguaje era confuso. Y las consecuencias de cometer un error eran graves, incluyendo perder el acceso a la cobertura de Medicare. El sabia que tenia que haber una mejor manera de ayudar a las personas en este proceso.',
-      'Hoy, MED VEST atiende a familias en los 50 estados. Nos encargamos del papeleo complejo, nos comunicamos con Medicare y CMS en su nombre, y nos aseguramos de que los fondos de su acuerdo se administren correctamente. Hablamos su idioma, tanto literalmente, con servicios completos en ingles y espanol, como figurativamente, explicando todo en terminos sencillos que pueda entender. Su tranquilidad es nuestra prioridad.',
+      'Hoy, Medvst atiende a familias en los 50 estados. Nos encargamos del papeleo complejo, nos comunicamos con Medicare y CMS en su nombre, y nos aseguramos de que los fondos de su acuerdo se administren correctamente. Hablamos su idioma, tanto literalmente, con servicios completos en ingles y espanol, como figurativamente, explicando todo en terminos sencillos que pueda entender. Su tranquilidad es nuestra prioridad.',
     ],
   },
 
@@ -194,8 +194,8 @@ export const aboutContent = {
         es: 'Fundador y CEO',
       },
       bio: {
-        en: 'Shahpoor founded MED VEST after witnessing the confusion and anxiety that injured individuals face when navigating Medicare Set-Asides and settlement compliance. With years of experience in healthcare administration and a deep commitment to helping families, he built MED VEST to be the trusted partner that every settlement recipient deserves. He oversees all operations and personally ensures that each client receives the highest level of service.',
-        es: 'Shahpoor fundo MED VEST despues de presenciar la confusion y la ansiedad que enfrentan las personas lesionadas al navegar los Medicare Set-Asides y el cumplimiento de acuerdos. Con anos de experiencia en administracion de salud y un profundo compromiso de ayudar a las familias, construyo MED VEST para ser el socio de confianza que todo beneficiario de acuerdo merece. El supervisa todas las operaciones y personalmente se asegura de que cada cliente reciba el mas alto nivel de servicio.',
+        en: 'Shahpoor founded Medvst after witnessing the confusion and anxiety that injured individuals face when navigating Medicare Set-Asides and settlement compliance. With years of experience in healthcare administration and a deep commitment to helping families, he built Medvst to be the trusted partner that every settlement recipient deserves. He oversees all operations and personally ensures that each client receives the highest level of service.',
+        es: 'Shahpoor fundo Medvst despues de presenciar la confusion y la ansiedad que enfrentan las personas lesionadas al navegar los Medicare Set-Asides y el cumplimiento de acuerdos. Con anos de experiencia en administracion de salud y un profundo compromiso de ayudar a las familias, construyo Medvst para ser el socio de confianza que todo beneficiario de acuerdo merece. El supervisa todas las operaciones y personalmente se asegura de que cada cliente reciba el mas alto nivel de servicio.',
       },
     },
   ] as TeamMember[],
@@ -227,8 +227,8 @@ export const aboutContent = {
         es: 'Los 50 Estados',
       },
       description: {
-        en: 'We serve clients nationwide. No matter where you live, MED VEST is available to help with your settlement.',
-        es: 'Servimos a clientes en todo el pais. No importa donde viva, MED VEST esta disponible para ayudar con su acuerdo.',
+        en: 'We serve clients nationwide. No matter where you live, Medvst is available to help with your settlement.',
+        es: 'Servimos a clientes en todo el pais. No importa donde viva, Medvst esta disponible para ayudar con su acuerdo.',
       },
     },
     {
@@ -254,12 +254,12 @@ export const servicePages: ServicePage[] = [
     slug: 'msa-administration',
     seo: {
       title: {
-        en: 'MSA Administration Services | MED VEST',
-        es: 'Servicios de Administracion MSA | MED VEST',
+        en: 'MSA Administration Services | Medvst',
+        es: 'Servicios de Administracion MSA | Medvst',
       },
       description: {
-        en: 'Professional Medicare Set-Aside administration. MED VEST manages your MSA funds, tracks medical expenses, and ensures full CMS compliance nationwide.',
-        es: 'Administracion profesional de Medicare Set-Aside. MED VEST administra sus fondos MSA, rastrea gastos medicos y garantiza el cumplimiento total con CMS a nivel nacional.',
+        en: 'Professional Medicare Set-Aside administration. Medvst manages your MSA funds, tracks medical expenses, and ensures full CMS compliance nationwide.',
+        es: 'Administracion profesional de Medicare Set-Aside. Medvst administra sus fondos MSA, rastrea gastos medicos y garantiza el cumplimiento total con CMS a nivel nacional.',
       },
     },
     hero: {
@@ -310,8 +310,8 @@ export const servicePages: ServicePage[] = [
       },
     ],
     explanation: {
-      en: 'A Medicare Set-Aside (MSA) is a portion of your settlement that is set aside to pay for future medical expenses related to your injury. Medicare requires this to make sure your settlement — not Medicare — pays for injury-related care first. If the MSA is not managed correctly, Medicare can refuse to pay for your medical care, even after your settlement money runs out.\n\nThat is where MED VEST comes in. We take full responsibility for administering your MSA. We open a dedicated account for your funds, review and pay your medical bills, keep detailed records, and submit all required annual reports to CMS. You do not have to figure out which bills qualify, how to file reports, or what the rules are — we handle all of it.\n\nOur team has administered hundreds of millions of dollars in MSA funds. We know the rules inside and out, and we stay current on every change in CMS policy. When you work with MED VEST, you can focus on your health and your family, knowing your MSA is in expert hands.',
-      es: 'Un Medicare Set-Aside (MSA) es una porcion de su acuerdo que se reserva para pagar futuros gastos medicos relacionados con su lesion. Medicare requiere esto para asegurarse de que su acuerdo, no Medicare, pague primero por la atencion relacionada con la lesion. Si el MSA no se administra correctamente, Medicare puede negarse a pagar por su atencion medica, incluso despues de que se agote el dinero de su acuerdo.\n\nAhi es donde entra MED VEST. Asumimos la responsabilidad total de administrar su MSA. Abrimos una cuenta dedicada para sus fondos, revisamos y pagamos sus facturas medicas, mantenemos registros detallados y presentamos todos los informes anuales requeridos a CMS. Usted no tiene que averiguar que facturas califican, como presentar informes o cuales son las reglas — nosotros nos encargamos de todo.\n\nNuestro equipo ha administrado cientos de millones de dolares en fondos MSA. Conocemos las reglas de principio a fin y nos mantenemos al dia con cada cambio en la politica de CMS. Cuando trabaja con MED VEST, puede concentrarse en su salud y su familia, sabiendo que su MSA esta en manos expertas.',
+      en: 'A Medicare Set-Aside (MSA) is a portion of your settlement that is set aside to pay for future medical expenses related to your injury. Medicare requires this to make sure your settlement — not Medicare — pays for injury-related care first. If the MSA is not managed correctly, Medicare can refuse to pay for your medical care, even after your settlement money runs out.\n\nThat is where Medvst comes in. We take full responsibility for administering your MSA. We open a dedicated account for your funds, review and pay your medical bills, keep detailed records, and submit all required annual reports to CMS. You do not have to figure out which bills qualify, how to file reports, or what the rules are — we handle all of it.\n\nOur team has administered hundreds of millions of dollars in MSA funds. We know the rules inside and out, and we stay current on every change in CMS policy. When you work with Medvst, you can focus on your health and your family, knowing your MSA is in expert hands.',
+      es: 'Un Medicare Set-Aside (MSA) es una porcion de su acuerdo que se reserva para pagar futuros gastos medicos relacionados con su lesion. Medicare requiere esto para asegurarse de que su acuerdo, no Medicare, pague primero por la atencion relacionada con la lesion. Si el MSA no se administra correctamente, Medicare puede negarse a pagar por su atencion medica, incluso despues de que se agote el dinero de su acuerdo.\n\nAhi es donde entra Medvst. Asumimos la responsabilidad total de administrar su MSA. Abrimos una cuenta dedicada para sus fondos, revisamos y pagamos sus facturas medicas, mantenemos registros detallados y presentamos todos los informes anuales requeridos a CMS. Usted no tiene que averiguar que facturas califican, como presentar informes o cuales son las reglas — nosotros nos encargamos de todo.\n\nNuestro equipo ha administrado cientos de millones de dolares en fondos MSA. Conocemos las reglas de principio a fin y nos mantenemos al dia con cada cambio en la politica de CMS. Cuando trabaja con Medvst, puede concentrarse en su salud y su familia, sabiendo que su MSA esta en manos expertas.',
     },
     processSteps: [
       {
@@ -386,12 +386,12 @@ export const servicePages: ServicePage[] = [
     slug: 'lien-resolution',
     seo: {
       title: {
-        en: 'Medicare Lien Resolution | MED VEST',
-        es: 'Resolucion de Gravamenes de Medicare | MED VEST',
+        en: 'Medicare Lien Resolution | Medvst',
+        es: 'Resolucion de Gravamenes de Medicare | Medvst',
       },
       description: {
-        en: 'Expert Medicare lien resolution services. MED VEST negotiates and resolves conditional payment liens to maximize your settlement take-home amount.',
-        es: 'Servicios expertos de resolucion de gravamenes de Medicare. MED VEST negocia y resuelve gravamenes de pagos condicionales para maximizar la cantidad neta de su acuerdo.',
+        en: 'Expert Medicare lien resolution services. Medvst negotiates and resolves conditional payment liens to maximize your settlement take-home amount.',
+        es: 'Servicios expertos de resolucion de gravamenes de Medicare. Medvst negocia y resuelve gravamenes de pagos condicionales para maximizar la cantidad neta de su acuerdo.',
       },
     },
     hero: {
@@ -435,8 +435,8 @@ export const servicePages: ServicePage[] = [
       },
     ],
     explanation: {
-      en: 'When you receive medical treatment for an injury and Medicare pays for some of that treatment, Medicare has the right to be reimbursed from your settlement. This is called a Medicare lien, or a conditional payment recovery. The amount Medicare claims can sometimes be incorrect — it may include charges for treatment unrelated to your injury, or the total may be higher than it should be.\n\nMED VEST steps in to protect your settlement. We request the full list of conditional payments from Medicare and its recovery contractor (the Benefits Coordination & Recovery Center, or BCRC). We carefully review every charge to make sure it is related to your injury. If we find charges that should not be included, we dispute them. We then negotiate with Medicare to reduce the total lien amount wherever possible.\n\nThe result? You keep more of your settlement. Our clients regularly save significant amounts through our lien resolution process. And because we handle all the communication with Medicare and the BCRC, you do not have to deal with confusing letters or phone calls.',
-      es: 'Cuando recibe tratamiento medico por una lesion y Medicare paga parte de ese tratamiento, Medicare tiene derecho a ser reembolsado de su acuerdo. Esto se llama un gravamen de Medicare, o una recuperacion de pago condicional. El monto que Medicare reclama a veces puede ser incorrecto — puede incluir cargos por tratamiento no relacionado con su lesion, o el total puede ser mas alto de lo que deberia ser.\n\nMED VEST interviene para proteger su acuerdo. Solicitamos la lista completa de pagos condicionales de Medicare y su contratista de recuperacion (el Centro de Coordinacion y Recuperacion de Beneficios, o BCRC). Revisamos cuidadosamente cada cargo para asegurarnos de que este relacionado con su lesion. Si encontramos cargos que no deberian estar incluidos, los disputamos. Luego negociamos con Medicare para reducir el monto total del gravamen siempre que sea posible.\n\nEl resultado? Usted se queda con mas de su acuerdo. Nuestros clientes regularmente ahorran cantidades significativas a traves de nuestro proceso de resolucion de gravamenes. Y como manejamos toda la comunicacion con Medicare y el BCRC, usted no tiene que lidiar con cartas o llamadas telefonicas confusas.',
+      en: 'When you receive medical treatment for an injury and Medicare pays for some of that treatment, Medicare has the right to be reimbursed from your settlement. This is called a Medicare lien, or a conditional payment recovery. The amount Medicare claims can sometimes be incorrect — it may include charges for treatment unrelated to your injury, or the total may be higher than it should be.\n\nMedvst steps in to protect your settlement. We request the full list of conditional payments from Medicare and its recovery contractor (the Benefits Coordination & Recovery Center, or BCRC). We carefully review every charge to make sure it is related to your injury. If we find charges that should not be included, we dispute them. We then negotiate with Medicare to reduce the total lien amount wherever possible.\n\nThe result? You keep more of your settlement. Our clients regularly save significant amounts through our lien resolution process. And because we handle all the communication with Medicare and the BCRC, you do not have to deal with confusing letters or phone calls.',
+      es: 'Cuando recibe tratamiento medico por una lesion y Medicare paga parte de ese tratamiento, Medicare tiene derecho a ser reembolsado de su acuerdo. Esto se llama un gravamen de Medicare, o una recuperacion de pago condicional. El monto que Medicare reclama a veces puede ser incorrecto — puede incluir cargos por tratamiento no relacionado con su lesion, o el total puede ser mas alto de lo que deberia ser.\n\nMedvst interviene para proteger su acuerdo. Solicitamos la lista completa de pagos condicionales de Medicare y su contratista de recuperacion (el Centro de Coordinacion y Recuperacion de Beneficios, o BCRC). Revisamos cuidadosamente cada cargo para asegurarnos de que este relacionado con su lesion. Si encontramos cargos que no deberian estar incluidos, los disputamos. Luego negociamos con Medicare para reducir el monto total del gravamen siempre que sea posible.\n\nEl resultado? Usted se queda con mas de su acuerdo. Nuestros clientes regularmente ahorran cantidades significativas a traves de nuestro proceso de resolucion de gravamenes. Y como manejamos toda la comunicacion con Medicare y el BCRC, usted no tiene que lidiar con cartas o llamadas telefonicas confusas.',
     },
     processSteps: [
       {
@@ -511,12 +511,12 @@ export const servicePages: ServicePage[] = [
     slug: 'settlement-consulting',
     seo: {
       title: {
-        en: 'Settlement Consulting Services | MED VEST',
-        es: 'Servicios de Consultoria de Acuerdos | MED VEST',
+        en: 'Settlement Consulting Services | Medvst',
+        es: 'Servicios de Consultoria de Acuerdos | Medvst',
       },
       description: {
-        en: 'Expert settlement consulting to protect your future Medicare benefits. MED VEST guides you through MSA allocations and settlement compliance.',
-        es: 'Consultoria experta en acuerdos para proteger sus futuros beneficios de Medicare. MED VEST lo guia a traves de asignaciones MSA y cumplimiento de acuerdos.',
+        en: 'Expert settlement consulting to protect your future Medicare benefits. Medvst guides you through MSA allocations and settlement compliance.',
+        es: 'Consultoria experta en acuerdos para proteger sus futuros beneficios de Medicare. Medvst lo guia a traves de asignaciones MSA y cumplimiento de acuerdos.',
       },
     },
     hero: {
@@ -560,8 +560,8 @@ export const servicePages: ServicePage[] = [
       },
     ],
     explanation: {
-      en: 'After you settle an injury claim, there are important decisions to make — especially if you are a Medicare beneficiary or expect to become one in the future. The government has rules about how your settlement money should be used for future medical care related to your injury. If those rules are not followed, your Medicare benefits could be at risk.\n\nMED VEST provides expert consulting to help you navigate these decisions. We review your settlement, assess whether a Medicare Set-Aside is required, and guide you through the entire compliance process. We work alongside your attorney to make sure your settlement is structured in a way that protects your benefits and your financial future.\n\nOur goal is to make sure you understand every step. We do not use confusing legal language or rush through explanations. We sit down with you, answer every question, and make sure you feel confident about the decisions being made with your settlement.',
-      es: 'Despues de resolver un reclamo por lesiones, hay decisiones importantes que tomar, especialmente si usted es beneficiario de Medicare o espera serlo en el futuro. El gobierno tiene reglas sobre como se debe usar el dinero de su acuerdo para la atencion medica futura relacionada con su lesion. Si esas reglas no se siguen, sus beneficios de Medicare podrian estar en riesgo.\n\nMED VEST proporciona consultoria experta para ayudarle a navegar estas decisiones. Revisamos su acuerdo, evaluamos si se requiere un Medicare Set-Aside y lo guiamos a traves de todo el proceso de cumplimiento. Trabajamos junto con su abogado para asegurarnos de que su acuerdo este estructurado de una manera que proteja sus beneficios y su futuro financiero.\n\nNuestro objetivo es asegurarnos de que usted entienda cada paso. No usamos lenguaje legal confuso ni nos apresuramos con las explicaciones. Nos sentamos con usted, respondemos cada pregunta y nos aseguramos de que se sienta seguro sobre las decisiones que se estan tomando con su acuerdo.',
+      en: 'After you settle an injury claim, there are important decisions to make — especially if you are a Medicare beneficiary or expect to become one in the future. The government has rules about how your settlement money should be used for future medical care related to your injury. If those rules are not followed, your Medicare benefits could be at risk.\n\nMedvst provides expert consulting to help you navigate these decisions. We review your settlement, assess whether a Medicare Set-Aside is required, and guide you through the entire compliance process. We work alongside your attorney to make sure your settlement is structured in a way that protects your benefits and your financial future.\n\nOur goal is to make sure you understand every step. We do not use confusing legal language or rush through explanations. We sit down with you, answer every question, and make sure you feel confident about the decisions being made with your settlement.',
+      es: 'Despues de resolver un reclamo por lesiones, hay decisiones importantes que tomar, especialmente si usted es beneficiario de Medicare o espera serlo en el futuro. El gobierno tiene reglas sobre como se debe usar el dinero de su acuerdo para la atencion medica futura relacionada con su lesion. Si esas reglas no se siguen, sus beneficios de Medicare podrian estar en riesgo.\n\nMedvst proporciona consultoria experta para ayudarle a navegar estas decisiones. Revisamos su acuerdo, evaluamos si se requiere un Medicare Set-Aside y lo guiamos a traves de todo el proceso de cumplimiento. Trabajamos junto con su abogado para asegurarnos de que su acuerdo este estructurado de una manera que proteja sus beneficios y su futuro financiero.\n\nNuestro objetivo es asegurarnos de que usted entienda cada paso. No usamos lenguaje legal confuso ni nos apresuramos con las explicaciones. Nos sentamos con usted, respondemos cada pregunta y nos aseguramos de que se sienta seguro sobre las decisiones que se estan tomando con su acuerdo.',
     },
     processSteps: [
       {
@@ -602,8 +602,8 @@ export const servicePages: ServicePage[] = [
       },
       {
         question: {
-          en: 'When should I contact MED VEST during my case?',
-          es: 'Cuando debo contactar a MED VEST durante mi caso?',
+          en: 'When should I contact Medvst during my case?',
+          es: 'Cuando debo contactar a Medvst durante mi caso?',
         },
         answer: {
           en: 'The earlier, the better. Ideally, contact us before your settlement is finalized so we can review the terms and make sure everything is set up correctly. However, we can also help after a settlement has already been reached if you need administration or compliance assistance.',
@@ -612,8 +612,8 @@ export const servicePages: ServicePage[] = [
       },
       {
         question: {
-          en: 'Will MED VEST work with my attorney?',
-          es: 'MED VEST trabajara con mi abogado?',
+          en: 'Will Medvst work with my attorney?',
+          es: 'Medvst trabajara con mi abogado?',
         },
         answer: {
           en: 'Absolutely. We regularly coordinate with attorneys, insurance adjusters, and other parties involved in settlements. We complement your legal team by providing the Medicare compliance expertise they may not have in-house.',
@@ -628,12 +628,12 @@ export const servicePages: ServicePage[] = [
     slug: 'trust-services',
     seo: {
       title: {
-        en: 'Medicare Set-Aside Trust Services | MED VEST',
-        es: 'Servicios de Fideicomiso de Medicare Set-Aside | MED VEST',
+        en: 'Medicare Set-Aside Trust Services | Medvst',
+        es: 'Servicios de Fideicomiso de Medicare Set-Aside | Medvst',
       },
       description: {
-        en: 'Professional MSA trust administration. MED VEST manages custodial and irrevocable trusts for Medicare Set-Aside accounts to protect your settlement funds.',
-        es: 'Administracion profesional de fideicomisos MSA. MED VEST administra fideicomisos custodiales e irrevocables para cuentas de Medicare Set-Aside para proteger los fondos de su acuerdo.',
+        en: 'Professional MSA trust administration. Medvst manages custodial and irrevocable trusts for Medicare Set-Aside accounts to protect your settlement funds.',
+        es: 'Administracion profesional de fideicomisos MSA. Medvst administra fideicomisos custodiales e irrevocables para cuentas de Medicare Set-Aside para proteger los fondos de su acuerdo.',
       },
     },
     hero: {
@@ -677,8 +677,8 @@ export const servicePages: ServicePage[] = [
       },
     ],
     explanation: {
-      en: 'Some settlement recipients benefit from having their Medicare Set-Aside funds held in a formal trust rather than a simple bank account. A trust provides additional legal protections for your money and ensures that an experienced professional oversees how your MSA funds are managed.\n\nMED VEST offers custodial and trust administration services specifically designed for MSA accounts. We work with qualified trust companies to establish the right type of trust for your situation. Whether you need a straightforward custodial arrangement or a more complex irrevocable trust — especially if you also have a special needs trust or are receiving government benefits — we have the expertise to set it up correctly.\n\nWith a trust in place, your MSA funds are protected from potential risks and managed by a fiduciary who is legally required to act in your best interest. Combined with our ongoing MSA administration services, this gives you the highest level of protection for your settlement funds.',
-      es: 'Algunos beneficiarios de acuerdos se benefician de tener sus fondos de Medicare Set-Aside en un fideicomiso formal en lugar de una simple cuenta bancaria. Un fideicomiso proporciona protecciones legales adicionales para su dinero y asegura que un profesional experimentado supervise como se administran sus fondos MSA.\n\nMED VEST ofrece servicios de custodia y administracion de fideicomisos disenados especificamente para cuentas MSA. Trabajamos con companias de fideicomiso calificadas para establecer el tipo correcto de fideicomiso para su situacion. Ya sea que necesite un arreglo custodial sencillo o un fideicomiso irrevocable mas complejo — especialmente si tambien tiene un fideicomiso para necesidades especiales o esta recibiendo beneficios del gobierno — tenemos la experiencia para configurarlo correctamente.\n\nCon un fideicomiso en su lugar, sus fondos MSA estan protegidos de riesgos potenciales y administrados por un fiduciario que esta legalmente obligado a actuar en su mejor interes. Combinado con nuestros servicios continuos de administracion MSA, esto le brinda el mas alto nivel de proteccion para los fondos de su acuerdo.',
+      en: 'Some settlement recipients benefit from having their Medicare Set-Aside funds held in a formal trust rather than a simple bank account. A trust provides additional legal protections for your money and ensures that an experienced professional oversees how your MSA funds are managed.\n\nMedvst offers custodial and trust administration services specifically designed for MSA accounts. We work with qualified trust companies to establish the right type of trust for your situation. Whether you need a straightforward custodial arrangement or a more complex irrevocable trust — especially if you also have a special needs trust or are receiving government benefits — we have the expertise to set it up correctly.\n\nWith a trust in place, your MSA funds are protected from potential risks and managed by a fiduciary who is legally required to act in your best interest. Combined with our ongoing MSA administration services, this gives you the highest level of protection for your settlement funds.',
+      es: 'Algunos beneficiarios de acuerdos se benefician de tener sus fondos de Medicare Set-Aside en un fideicomiso formal en lugar de una simple cuenta bancaria. Un fideicomiso proporciona protecciones legales adicionales para su dinero y asegura que un profesional experimentado supervise como se administran sus fondos MSA.\n\nMedvst ofrece servicios de custodia y administracion de fideicomisos disenados especificamente para cuentas MSA. Trabajamos con companias de fideicomiso calificadas para establecer el tipo correcto de fideicomiso para su situacion. Ya sea que necesite un arreglo custodial sencillo o un fideicomiso irrevocable mas complejo — especialmente si tambien tiene un fideicomiso para necesidades especiales o esta recibiendo beneficios del gobierno — tenemos la experiencia para configurarlo correctamente.\n\nCon un fideicomiso en su lugar, sus fondos MSA estan protegidos de riesgos potenciales y administrados por un fiduciario que esta legalmente obligado a actuar en su mejor interes. Combinado con nuestros servicios continuos de administracion MSA, esto le brinda el mas alto nivel de proteccion para los fondos de su acuerdo.',
     },
     processSteps: [
       {
@@ -753,12 +753,12 @@ export const servicePages: ServicePage[] = [
     slug: 'liability-settlements',
     seo: {
       title: {
-        en: 'Liability Settlement MSA Services | MED VEST',
-        es: 'Servicios MSA para Acuerdos de Responsabilidad Civil | MED VEST',
+        en: 'Liability Settlement MSA Services | Medvst',
+        es: 'Servicios MSA para Acuerdos de Responsabilidad Civil | Medvst',
       },
       description: {
-        en: 'Medicare Set-Aside services for liability settlements. MED VEST helps protect your Medicare benefits in auto accident, slip and fall, and personal injury cases.',
-        es: 'Servicios de Medicare Set-Aside para acuerdos de responsabilidad civil. MED VEST ayuda a proteger sus beneficios de Medicare en casos de accidentes de auto, caidas y lesiones personales.',
+        en: 'Medicare Set-Aside services for liability settlements. Medvst helps protect your Medicare benefits in auto accident, slip and fall, and personal injury cases.',
+        es: 'Servicios de Medicare Set-Aside para acuerdos de responsabilidad civil. Medvst ayuda a proteger sus beneficios de Medicare en casos de accidentes de auto, caidas y lesiones personales.',
       },
     },
     hero: {
@@ -802,8 +802,8 @@ export const servicePages: ServicePage[] = [
       },
     ],
     explanation: {
-      en: 'When you settle a personal injury lawsuit — whether it is from a car accident, a slip and fall, medical malpractice, or another type of incident — Medicare may have an interest in your settlement. If you are currently on Medicare, or if you are expected to enroll within 30 months, you have a responsibility to consider Medicare\'s interests when settling your case.\n\nLiability settlements are different from workers\' compensation cases when it comes to Medicare rules. CMS does not currently have a formal review process for liability MSAs the way it does for workers\' compensation MSAs. However, that does not mean you can ignore Medicare\'s interests. Courts and CMS have made it clear that settlement recipients have an obligation to protect Medicare\'s future interests in liability cases.\n\nMED VEST specializes in helping liability settlement recipients navigate this evolving area of law. We assess whether a liability MSA is appropriate for your case, help determine the right allocation amount if one is needed, and provide full administration services to keep you in compliance. Our goal is to protect your settlement and your Medicare benefits so you can focus on moving forward with your life.',
-      es: 'Cuando resuelve una demanda por lesiones personales — ya sea por un accidente de auto, una caida, negligencia medica u otro tipo de incidente — Medicare puede tener un interes en su acuerdo. Si actualmente esta en Medicare, o si se espera que se inscriba dentro de 30 meses, tiene la responsabilidad de considerar los intereses de Medicare al resolver su caso.\n\nLos acuerdos de responsabilidad civil son diferentes de los casos de compensacion laboral en lo que respecta a las reglas de Medicare. CMS actualmente no tiene un proceso formal de revision para MSA de responsabilidad civil como lo tiene para MSA de compensacion laboral. Sin embargo, eso no significa que pueda ignorar los intereses de Medicare. Los tribunales y CMS han dejado claro que los beneficiarios de acuerdos tienen la obligacion de proteger los intereses futuros de Medicare en casos de responsabilidad civil.\n\nMED VEST se especializa en ayudar a los beneficiarios de acuerdos de responsabilidad civil a navegar esta area del derecho en evolucion. Evaluamos si un MSA de responsabilidad civil es apropiado para su caso, ayudamos a determinar el monto de asignacion correcto si se necesita uno y proporcionamos servicios completos de administracion para mantenerlo en cumplimiento. Nuestro objetivo es proteger su acuerdo y sus beneficios de Medicare para que pueda concentrarse en seguir adelante con su vida.',
+      en: 'When you settle a personal injury lawsuit — whether it is from a car accident, a slip and fall, medical malpractice, or another type of incident — Medicare may have an interest in your settlement. If you are currently on Medicare, or if you are expected to enroll within 30 months, you have a responsibility to consider Medicare\'s interests when settling your case.\n\nLiability settlements are different from workers\' compensation cases when it comes to Medicare rules. CMS does not currently have a formal review process for liability MSAs the way it does for workers\' compensation MSAs. However, that does not mean you can ignore Medicare\'s interests. Courts and CMS have made it clear that settlement recipients have an obligation to protect Medicare\'s future interests in liability cases.\n\nMedvst specializes in helping liability settlement recipients navigate this evolving area of law. We assess whether a liability MSA is appropriate for your case, help determine the right allocation amount if one is needed, and provide full administration services to keep you in compliance. Our goal is to protect your settlement and your Medicare benefits so you can focus on moving forward with your life.',
+      es: 'Cuando resuelve una demanda por lesiones personales — ya sea por un accidente de auto, una caida, negligencia medica u otro tipo de incidente — Medicare puede tener un interes en su acuerdo. Si actualmente esta en Medicare, o si se espera que se inscriba dentro de 30 meses, tiene la responsabilidad de considerar los intereses de Medicare al resolver su caso.\n\nLos acuerdos de responsabilidad civil son diferentes de los casos de compensacion laboral en lo que respecta a las reglas de Medicare. CMS actualmente no tiene un proceso formal de revision para MSA de responsabilidad civil como lo tiene para MSA de compensacion laboral. Sin embargo, eso no significa que pueda ignorar los intereses de Medicare. Los tribunales y CMS han dejado claro que los beneficiarios de acuerdos tienen la obligacion de proteger los intereses futuros de Medicare en casos de responsabilidad civil.\n\nMedvst se especializa en ayudar a los beneficiarios de acuerdos de responsabilidad civil a navegar esta area del derecho en evolucion. Evaluamos si un MSA de responsabilidad civil es apropiado para su caso, ayudamos a determinar el monto de asignacion correcto si se necesita uno y proporcionamos servicios completos de administracion para mantenerlo en cumplimiento. Nuestro objetivo es proteger su acuerdo y sus beneficios de Medicare para que pueda concentrarse en seguir adelante con su vida.',
     },
     processSteps: [
       {
@@ -844,8 +844,8 @@ export const servicePages: ServicePage[] = [
       },
       {
         question: {
-          en: 'What types of liability cases does MED VEST handle?',
-          es: 'Que tipos de casos de responsabilidad civil maneja MED VEST?',
+          en: 'What types of liability cases does Medvst handle?',
+          es: 'Que tipos de casos de responsabilidad civil maneja Medvst?',
         },
         answer: {
           en: 'We handle all types of liability cases including auto accidents, premises liability (slip and fall), medical malpractice, product liability, dog bites, and other personal injury claims. If your case involves a settlement and you are a Medicare beneficiary or may become one, we can help.',
@@ -873,19 +873,19 @@ export const servicePages: ServicePage[] = [
 export const howItWorksContent = {
   seo: {
     title: {
-      en: 'How It Works | MED VEST Medicare Set-Aside Administration',
-      es: 'Como Funciona | Administracion de Medicare Set-Aside MED VEST',
+      en: 'How It Works | Medvst Medicare Set-Aside Administration',
+      es: 'Como Funciona | Administracion de Medicare Set-Aside Medvst',
     },
     description: {
-      en: 'Learn how MED VEST manages your Medicare Set-Aside in 4 simple steps. From consultation to ongoing administration, we make the process easy.',
-      es: 'Aprenda como MED VEST administra su Medicare Set-Aside en 4 simples pasos. Desde la consulta hasta la administracion continua, hacemos el proceso facil.',
+      en: 'Learn how Medvst manages your Medicare Set-Aside in 4 simple steps. From consultation to ongoing administration, we make the process easy.',
+      es: 'Aprenda como Medvst administra su Medicare Set-Aside en 4 simples pasos. Desde la consulta hasta la administracion continua, hacemos el proceso facil.',
     },
   },
 
   hero: {
     headline: {
-      en: 'How MED VEST Works',
-      es: 'Como Funciona MED VEST',
+      en: 'How Medvst Works',
+      es: 'Como Funciona Medvst',
     },
     description: {
       en: 'We take the stress and confusion out of Medicare Set-Aside administration. Here is how the process works, step by step.',
@@ -964,12 +964,12 @@ export const howItWorksContent = {
 export const resultsContent = {
   seo: {
     title: {
-      en: 'Case Results | MED VEST Medicare Set-Aside Administration',
-      es: 'Resultados de Casos | Administracion de Medicare Set-Aside MED VEST',
+      en: 'Case Results | Medvst Medicare Set-Aside Administration',
+      es: 'Resultados de Casos | Administracion de Medicare Set-Aside Medvst',
     },
     description: {
-      en: 'View real case results from MED VEST. Over $500 million administered for 5,000+ families across all 50 states.',
-      es: 'Vea resultados reales de casos de MED VEST. Mas de $500 millones administrados para mas de 5,000 familias en los 50 estados.',
+      en: 'View real case results from Medvst. Over $500 million administered for 5,000+ families across all 50 states.',
+      es: 'Vea resultados reales de casos de Medvst. Mas de $500 millones administrados para mas de 5,000 familias en los 50 estados.',
     },
   },
 
@@ -1004,8 +1004,8 @@ export const resultsContent = {
   ],
 
   trustCopy: {
-    en: 'Every case result shown below represents a real family that trusted MED VEST with their settlement. While every case is different, these results reflect our commitment to protecting our clients\' funds and Medicare benefits. Individual outcomes depend on the specifics of each case.',
-    es: 'Cada resultado de caso mostrado a continuacion representa una familia real que confio en MED VEST con su acuerdo. Si bien cada caso es diferente, estos resultados reflejan nuestro compromiso de proteger los fondos y beneficios de Medicare de nuestros clientes. Los resultados individuales dependen de los detalles especificos de cada caso.',
+    en: 'Every case result shown below represents a real family that trusted Medvst with their settlement. While every case is different, these results reflect our commitment to protecting our clients\' funds and Medicare benefits. Individual outcomes depend on the specifics of each case.',
+    es: 'Cada resultado de caso mostrado a continuacion representa una familia real que confio en Medvst con su acuerdo. Si bien cada caso es diferente, estos resultados reflejan nuestro compromiso de proteger los fondos y beneficios de Medicare de nuestros clientes. Los resultados individuales dependen de los detalles especificos de cada caso.',
   },
 
   caseResults: [
@@ -1149,12 +1149,12 @@ export const resultsContent = {
 export const faqContent = {
   seo: {
     title: {
-      en: 'Frequently Asked Questions | MED VEST',
-      es: 'Preguntas Frecuentes | MED VEST',
+      en: 'Frequently Asked Questions | Medvst',
+      es: 'Preguntas Frecuentes | Medvst',
     },
     description: {
-      en: 'Get answers to common questions about Medicare Set-Asides, liens, settlement administration, and how MED VEST can help protect your settlement.',
-      es: 'Obtenga respuestas a preguntas comunes sobre Medicare Set-Asides, gravamenes, administracion de acuerdos y como MED VEST puede ayudar a proteger su acuerdo.',
+      en: 'Get answers to common questions about Medicare Set-Asides, liens, settlement administration, and how Medvst can help protect your settlement.',
+      es: 'Obtenga respuestas a preguntas comunes sobre Medicare Set-Asides, gravamenes, administracion de acuerdos y como Medvst puede ayudar a proteger su acuerdo.',
     },
   },
 
@@ -1173,19 +1173,19 @@ export const faqContent = {
     // General
     {
       question: {
-        en: 'What does MED VEST do?',
-        es: 'Que hace MED VEST?',
+        en: 'What does Medvst do?',
+        es: 'Que hace Medvst?',
       },
       answer: {
-        en: 'MED VEST is a Medicare Set-Aside (MSA) administration company. We help people who have received injury settlements manage their MSA funds, resolve Medicare liens, and stay in compliance with Medicare and CMS requirements. We handle the paperwork, pay medical bills from your MSA account, file required reports, and make sure your Medicare benefits are protected.',
-        es: 'MED VEST es una empresa de administracion de Medicare Set-Aside (MSA). Ayudamos a personas que han recibido acuerdos por lesiones a administrar sus fondos MSA, resolver gravamenes de Medicare y cumplir con los requisitos de Medicare y CMS. Nos encargamos del papeleo, pagamos facturas medicas de su cuenta MSA, presentamos informes requeridos y nos aseguramos de que sus beneficios de Medicare esten protegidos.',
+        en: 'Medvst is a Medicare Set-Aside (MSA) administration company. We help people who have received injury settlements manage their MSA funds, resolve Medicare liens, and stay in compliance with Medicare and CMS requirements. We handle the paperwork, pay medical bills from your MSA account, file required reports, and make sure your Medicare benefits are protected.',
+        es: 'Medvst es una empresa de administracion de Medicare Set-Aside (MSA). Ayudamos a personas que han recibido acuerdos por lesiones a administrar sus fondos MSA, resolver gravamenes de Medicare y cumplir con los requisitos de Medicare y CMS. Nos encargamos del papeleo, pagamos facturas medicas de su cuenta MSA, presentamos informes requeridos y nos aseguramos de que sus beneficios de Medicare esten protegidos.',
       },
       category: 'General',
     },
     {
       question: {
-        en: 'Who does MED VEST serve?',
-        es: 'A quien atiende MED VEST?',
+        en: 'Who does Medvst serve?',
+        es: 'A quien atiende Medvst?',
       },
       answer: {
         en: 'We serve injured individuals and their families who have received or are about to receive an injury settlement — whether from a workers\' compensation case, auto accident, slip and fall, or other personal injury claim. If your settlement involves Medicare obligations, we are here to help. We serve clients in all 50 states.',
@@ -1199,15 +1199,15 @@ export const faqContent = {
         es: 'Ofrecen servicios en espanol?',
       },
       answer: {
-        en: 'Yes. MED VEST provides full bilingual services in English and Spanish. Our team members speak both languages, and our website, client portal, and documentation are available in Spanish. We believe everyone deserves to understand their settlement in their own language.',
-        es: 'Si. MED VEST proporciona servicios bilingues completos en ingles y espanol. Los miembros de nuestro equipo hablan ambos idiomas, y nuestro sitio web, portal de cliente y documentacion estan disponibles en espanol. Creemos que todos merecen entender su acuerdo en su propio idioma.',
+        en: 'Yes. Medvst provides full bilingual services in English and Spanish. Our team members speak both languages, and our website, client portal, and documentation are available in Spanish. We believe everyone deserves to understand their settlement in their own language.',
+        es: 'Si. Medvst proporciona servicios bilingues completos en ingles y espanol. Los miembros de nuestro equipo hablan ambos idiomas, y nuestro sitio web, portal de cliente y documentacion estan disponibles en espanol. Creemos que todos merecen entender su acuerdo en su propio idioma.',
       },
       category: 'General',
     },
     {
       question: {
-        en: 'How do I get started with MED VEST?',
-        es: 'Como empiezo con MED VEST?',
+        en: 'How do I get started with Medvst?',
+        es: 'Como empiezo con Medvst?',
       },
       answer: {
         en: 'Getting started is easy. Call us at (818) 674-1211, email us at info@medvst.com, or fill out the contact form on our website. We will schedule a free consultation to review your situation and explain your options. There is no cost and no obligation for the initial consultation.',
@@ -1244,8 +1244,8 @@ export const faqContent = {
         es: 'Puedo administrar mi MSA por mi cuenta?',
       },
       answer: {
-        en: 'Technically, yes — you can self-administer your MSA. However, the rules are complex, and mistakes can have serious consequences. If you use MSA funds for unapproved expenses, fail to keep proper records, or miss required reports, Medicare can refuse to cover your injury-related medical care. Professional administration through MED VEST ensures everything is done correctly and protects your benefits.',
-        es: 'Tecnicamente, si — puede autoadministrar su MSA. Sin embargo, las reglas son complejas y los errores pueden tener consecuencias graves. Si utiliza fondos MSA para gastos no aprobados, no mantiene registros adecuados o no presenta informes requeridos, Medicare puede negarse a cubrir su atencion medica relacionada con la lesion. La administracion profesional a traves de MED VEST asegura que todo se haga correctamente y protege sus beneficios.',
+        en: 'Technically, yes — you can self-administer your MSA. However, the rules are complex, and mistakes can have serious consequences. If you use MSA funds for unapproved expenses, fail to keep proper records, or miss required reports, Medicare can refuse to cover your injury-related medical care. Professional administration through Medvst ensures everything is done correctly and protects your benefits.',
+        es: 'Tecnicamente, si — puede autoadministrar su MSA. Sin embargo, las reglas son complejas y los errores pueden tener consecuencias graves. Si utiliza fondos MSA para gastos no aprobados, no mantiene registros adecuados o no presenta informes requeridos, Medicare puede negarse a cubrir su atencion medica relacionada con la lesion. La administracion profesional a traves de Medvst asegura que todo se haga correctamente y protege sus beneficios.',
       },
       category: 'MSA',
     },
@@ -1278,8 +1278,8 @@ export const faqContent = {
         es: 'Se pueden negociar o reducir los gravamenes de Medicare?',
       },
       answer: {
-        en: 'Yes. Medicare allows for reductions based on procurement costs (your attorney fees and legal expenses). Additionally, if the lien includes charges for treatment unrelated to your injury, those can be disputed and removed. MED VEST reviews every charge and negotiates with Medicare to reduce your lien to the lowest legitimate amount.',
-        es: 'Si. Medicare permite reducciones basadas en costos de adquisicion (honorarios de su abogado y gastos legales). Adicionalmente, si el gravamen incluye cargos por tratamiento no relacionado con su lesion, estos pueden ser disputados y eliminados. MED VEST revisa cada cargo y negocia con Medicare para reducir su gravamen al monto legitimo mas bajo.',
+        en: 'Yes. Medicare allows for reductions based on procurement costs (your attorney fees and legal expenses). Additionally, if the lien includes charges for treatment unrelated to your injury, those can be disputed and removed. Medvst reviews every charge and negotiates with Medicare to reduce your lien to the lowest legitimate amount.',
+        es: 'Si. Medicare permite reducciones basadas en costos de adquisicion (honorarios de su abogado y gastos legales). Adicionalmente, si el gravamen incluye cargos por tratamiento no relacionado con su lesion, estos pueden ser disputados y eliminados. Medvst revisa cada cargo y negocia con Medicare para reducir su gravamen al monto legitimo mas bajo.',
       },
       category: 'Liens',
     },
@@ -1297,8 +1297,8 @@ export const faqContent = {
     // Costs
     {
       question: {
-        en: 'How much do MED VEST\'s services cost?',
-        es: 'Cuanto cuestan los servicios de MED VEST?',
+        en: 'How much do Medvst\'s services cost?',
+        es: 'Cuanto cuestan los servicios de Medvst?',
       },
       answer: {
         en: 'Our fees vary depending on the service. For MSA administration, the fee is often built into the MSA allocation itself, meaning there is typically no additional out-of-pocket cost to you. For lien resolution and consulting services, we provide transparent pricing during your free initial consultation. We never charge hidden fees.',
@@ -1312,8 +1312,8 @@ export const faqContent = {
         es: 'La consulta inicial es realmente gratuita?',
       },
       answer: {
-        en: 'Yes. Your initial consultation with MED VEST is completely free with no obligation. We review your situation, explain your options, and answer your questions — at no cost. We want you to have the information you need to make the best decision for your situation.',
-        es: 'Si. Su consulta inicial con MED VEST es completamente gratuita y sin obligacion. Revisamos su situacion, explicamos sus opciones y respondemos sus preguntas — sin costo. Queremos que tenga la informacion que necesita para tomar la mejor decision para su situacion.',
+        en: 'Yes. Your initial consultation with Medvst is completely free with no obligation. We review your situation, explain your options, and answer your questions — at no cost. We want you to have the information you need to make the best decision for your situation.',
+        es: 'Si. Su consulta inicial con Medvst es completamente gratuita y sin obligacion. Revisamos su situacion, explicamos sus opciones y respondemos sus preguntas — sin costo. Queremos que tenga la informacion que necesita para tomar la mejor decision para su situacion.',
       },
       category: 'Costs',
     },
@@ -1323,8 +1323,8 @@ export const faqContent = {
         es: 'Hay tarifas ocultas?',
       },
       answer: {
-        en: 'No. MED VEST is committed to complete transparency in our pricing. All fees are explained in detail before you agree to any services. You will know exactly what you are paying for and why. If anything about our pricing is unclear, we encourage you to ask — we are happy to explain.',
-        es: 'No. MED VEST esta comprometido con la transparencia total en nuestros precios. Todas las tarifas se explican en detalle antes de que acepte cualquier servicio. Sabra exactamente por que esta pagando y por que. Si algo sobre nuestros precios no esta claro, le animamos a preguntar — estamos felices de explicar.',
+        en: 'No. Medvst is committed to complete transparency in our pricing. All fees are explained in detail before you agree to any services. You will know exactly what you are paying for and why. If anything about our pricing is unclear, we encourage you to ask — we are happy to explain.',
+        es: 'No. Medvst esta comprometido con la transparencia total en nuestros precios. Todas las tarifas se explican en detalle antes de que acepte cualquier servicio. Sabra exactamente por que esta pagando y por que. Si algo sobre nuestros precios no esta claro, le animamos a preguntar — estamos felices de explicar.',
       },
       category: 'Costs',
     },
@@ -1335,8 +1335,8 @@ export const faqContent = {
         es: 'Que es el portal de cliente?',
       },
       answer: {
-        en: 'The MED VEST client portal is a secure online platform where you can track your MSA account in real time. You can view your balance, see payment history, download reports and documents, upload files, and communicate with our team. It is available 24/7 from any device with internet access.',
-        es: 'El portal de cliente de MED VEST es una plataforma segura en linea donde puede rastrear su cuenta MSA en tiempo real. Puede ver su saldo, ver el historial de pagos, descargar informes y documentos, cargar archivos y comunicarse con nuestro equipo. Esta disponible 24/7 desde cualquier dispositivo con acceso a internet.',
+        en: 'The Medvst client portal is a secure online platform where you can track your MSA account in real time. You can view your balance, see payment history, download reports and documents, upload files, and communicate with our team. It is available 24/7 from any device with internet access.',
+        es: 'El portal de cliente de Medvst es una plataforma segura en linea donde puede rastrear su cuenta MSA en tiempo real. Puede ver su saldo, ver el historial de pagos, descargar informes y documentos, cargar archivos y comunicarse con nuestro equipo. Esta disponible 24/7 desde cualquier dispositivo con acceso a internet.',
       },
       category: 'Portal',
     },
@@ -1372,12 +1372,12 @@ export const faqContent = {
 export const legalContent = {
   seo: {
     title: {
-      en: 'Legal | Privacy Policy, Terms, HIPAA Notice | MED VEST',
-      es: 'Legal | Politica de Privacidad, Terminos, Aviso HIPAA | MED VEST',
+      en: 'Legal | Privacy Policy, Terms, HIPAA Notice | Medvst',
+      es: 'Legal | Politica de Privacidad, Terminos, Aviso HIPAA | Medvst',
     },
     description: {
-      en: 'MED VEST legal information including Privacy Policy (CCPA/CPRA), Terms of Service, HIPAA Notice, and Accessibility Statement.',
-      es: 'Informacion legal de MED VEST incluyendo Politica de Privacidad (CCPA/CPRA), Terminos de Servicio, Aviso HIPAA y Declaracion de Accesibilidad.',
+      en: 'Medvst legal information including Privacy Policy (CCPA/CPRA), Terms of Service, HIPAA Notice, and Accessibility Statement.',
+      es: 'Informacion legal de Medvst incluyendo Politica de Privacidad (CCPA/CPRA), Terminos de Servicio, Aviso HIPAA y Declaracion de Accesibilidad.',
     },
   },
 
@@ -1385,7 +1385,7 @@ export const legalContent = {
     title: { en: 'Privacy Policy', es: 'Politica de Privacidad' },
     lastUpdated: '2026-04-01',
     content: {
-      en: `MED VEST ("we," "us," or "our") is committed to protecting the privacy and security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (medvst.com) or use our services.
+      en: `Medvst ("we," "us," or "our") is committed to protecting the privacy and security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (medvst.com) or use our services.
 
 INFORMATION WE COLLECT
 
@@ -1447,11 +1447,11 @@ CONTACT US
 
 If you have questions about this Privacy Policy or wish to exercise your privacy rights, please contact us:
 
-MED VEST
+Medvst
 PO Box 8294, Van Nuys, CA 91410
 Phone: (818) 674-1211
 Email: info@medvst.com`,
-      es: `MED VEST ("nosotros" o "nuestro") esta comprometido con la proteccion de la privacidad y seguridad de su informacion personal. Esta Politica de Privacidad explica como recopilamos, usamos, divulgamos y protegemos su informacion cuando visita nuestro sitio web (medvst.com) o utiliza nuestros servicios.
+      es: `Medvst ("nosotros" o "nuestro") esta comprometido con la proteccion de la privacidad y seguridad de su informacion personal. Esta Politica de Privacidad explica como recopilamos, usamos, divulgamos y protegemos su informacion cuando visita nuestro sitio web (medvst.com) o utiliza nuestros servicios.
 
 INFORMACION QUE RECOPILAMOS
 
@@ -1513,7 +1513,7 @@ CONTACTENOS
 
 Si tiene preguntas sobre esta Politica de Privacidad o desea ejercer sus derechos de privacidad, contactenos:
 
-MED VEST
+Medvst
 PO Box 8294, Van Nuys, CA 91410
 Telefono: (818) 674-1211
 Correo electronico: info@medvst.com`,
@@ -1524,11 +1524,11 @@ Correo electronico: info@medvst.com`,
     title: { en: 'Terms of Service', es: 'Terminos de Servicio' },
     lastUpdated: '2026-04-01',
     content: {
-      en: `These Terms of Service ("Terms") govern your use of the MED VEST website (medvst.com) and services. By accessing our website or using our services, you agree to these Terms.
+      en: `These Terms of Service ("Terms") govern your use of the Medvst website (medvst.com) and services. By accessing our website or using our services, you agree to these Terms.
 
 SERVICES
 
-MED VEST provides Medicare Set-Aside administration, lien resolution, settlement consulting, trust services, and related services. Our services are provided pursuant to individual service agreements between MED VEST and each client.
+Medvst provides Medicare Set-Aside administration, lien resolution, settlement consulting, trust services, and related services. Our services are provided pursuant to individual service agreements between Medvst and each client.
 
 USE OF WEBSITE
 
@@ -1540,21 +1540,21 @@ You may use our website for lawful purposes only. You agree not to:
 
 INTELLECTUAL PROPERTY
 
-All content on this website — including text, graphics, logos, images, and software — is the property of MED VEST and is protected by copyright and intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without written permission.
+All content on this website — including text, graphics, logos, images, and software — is the property of Medvst and is protected by copyright and intellectual property laws. You may not reproduce, distribute, or create derivative works from our content without written permission.
 
 DISCLAIMER
 
-The information on this website is for general educational purposes only and does not constitute legal, medical, or financial advice. MED VEST is not a law firm and does not provide legal advice. We recommend consulting with a qualified attorney for legal questions related to your settlement.
+The information on this website is for general educational purposes only and does not constitute legal, medical, or financial advice. Medvst is not a law firm and does not provide legal advice. We recommend consulting with a qualified attorney for legal questions related to your settlement.
 
 Our website and services are provided "as is" without warranties of any kind, either express or implied. We do not guarantee specific outcomes for any case or service.
 
 LIMITATION OF LIABILITY
 
-To the fullest extent permitted by law, MED VEST shall not be liable for any indirect, incidental, consequential, or punitive damages arising from your use of our website or services.
+To the fullest extent permitted by law, Medvst shall not be liable for any indirect, incidental, consequential, or punitive damages arising from your use of our website or services.
 
 INDEMNIFICATION
 
-You agree to indemnify and hold harmless MED VEST, its officers, employees, and agents from any claims, damages, or expenses arising from your use of our website or violation of these Terms.
+You agree to indemnify and hold harmless Medvst, its officers, employees, and agents from any claims, damages, or expenses arising from your use of our website or violation of these Terms.
 
 THIRD-PARTY LINKS
 
@@ -1571,15 +1571,15 @@ We reserve the right to modify these Terms at any time. Changes will be effectiv
 CONTACT
 
 For questions about these Terms, contact us at:
-MED VEST
+Medvst
 PO Box 8294, Van Nuys, CA 91410
 Email: info@medvst.com
 Phone: (818) 674-1211`,
-      es: `Estos Terminos de Servicio ("Terminos") rigen su uso del sitio web de MED VEST (medvst.com) y sus servicios. Al acceder a nuestro sitio web o utilizar nuestros servicios, usted acepta estos Terminos.
+      es: `Estos Terminos de Servicio ("Terminos") rigen su uso del sitio web de Medvst (medvst.com) y sus servicios. Al acceder a nuestro sitio web o utilizar nuestros servicios, usted acepta estos Terminos.
 
 SERVICIOS
 
-MED VEST proporciona administracion de Medicare Set-Aside, resolucion de gravamenes, consultoria de acuerdos, servicios de fideicomiso y servicios relacionados. Nuestros servicios se proporcionan de acuerdo con contratos de servicio individuales entre MED VEST y cada cliente.
+Medvst proporciona administracion de Medicare Set-Aside, resolucion de gravamenes, consultoria de acuerdos, servicios de fideicomiso y servicios relacionados. Nuestros servicios se proporcionan de acuerdo con contratos de servicio individuales entre Medvst y cada cliente.
 
 USO DEL SITIO WEB
 
@@ -1591,21 +1591,21 @@ Puede utilizar nuestro sitio web solo para propositos legales. Usted acepta no:
 
 PROPIEDAD INTELECTUAL
 
-Todo el contenido de este sitio web — incluyendo texto, graficos, logotipos, imagenes y software — es propiedad de MED VEST y esta protegido por leyes de derechos de autor y propiedad intelectual. No puede reproducir, distribuir ni crear obras derivadas de nuestro contenido sin permiso por escrito.
+Todo el contenido de este sitio web — incluyendo texto, graficos, logotipos, imagenes y software — es propiedad de Medvst y esta protegido por leyes de derechos de autor y propiedad intelectual. No puede reproducir, distribuir ni crear obras derivadas de nuestro contenido sin permiso por escrito.
 
 DESCARGO DE RESPONSABILIDAD
 
-La informacion en este sitio web es solo para propositos educativos generales y no constituye asesoramiento legal, medico o financiero. MED VEST no es un bufete de abogados y no proporciona asesoramiento legal. Recomendamos consultar con un abogado calificado para preguntas legales relacionadas con su acuerdo.
+La informacion en este sitio web es solo para propositos educativos generales y no constituye asesoramiento legal, medico o financiero. Medvst no es un bufete de abogados y no proporciona asesoramiento legal. Recomendamos consultar con un abogado calificado para preguntas legales relacionadas con su acuerdo.
 
 Nuestro sitio web y servicios se proporcionan "tal cual" sin garantias de ningun tipo, ya sean expresas o implicitas. No garantizamos resultados especificos para ningun caso o servicio.
 
 LIMITACION DE RESPONSABILIDAD
 
-En la maxima medida permitida por la ley, MED VEST no sera responsable de ningun dano indirecto, incidental, consecuente o punitivo que surja de su uso de nuestro sitio web o servicios.
+En la maxima medida permitida por la ley, Medvst no sera responsable de ningun dano indirecto, incidental, consecuente o punitivo que surja de su uso de nuestro sitio web o servicios.
 
 INDEMNIZACION
 
-Usted acepta indemnizar y mantener indemne a MED VEST, sus oficiales, empleados y agentes de cualquier reclamo, dano o gasto que surja de su uso de nuestro sitio web o violacion de estos Terminos.
+Usted acepta indemnizar y mantener indemne a Medvst, sus oficiales, empleados y agentes de cualquier reclamo, dano o gasto que surja de su uso de nuestro sitio web o violacion de estos Terminos.
 
 ENLACES DE TERCEROS
 
@@ -1622,7 +1622,7 @@ Nos reservamos el derecho de modificar estos Terminos en cualquier momento. Los 
 CONTACTO
 
 Para preguntas sobre estos Terminos, contactenos en:
-MED VEST
+Medvst
 PO Box 8294, Van Nuys, CA 91410
 Correo electronico: info@medvst.com
 Telefono: (818) 674-1211`,
@@ -1635,7 +1635,7 @@ Telefono: (818) 674-1211`,
     content: {
       en: `THIS NOTICE DESCRIBES HOW MEDICAL INFORMATION ABOUT YOU MAY BE USED AND DISCLOSED AND HOW YOU CAN GET ACCESS TO THIS INFORMATION. PLEASE REVIEW IT CAREFULLY.
 
-MED VEST is committed to protecting the privacy of your health information. This notice explains how we may use and share your protected health information (PHI) and your rights regarding that information.
+Medvst is committed to protecting the privacy of your health information. This notice explains how we may use and share your protected health information (PHI) and your rights regarding that information.
 
 HOW WE MAY USE AND DISCLOSE YOUR HEALTH INFORMATION
 
@@ -1664,7 +1664,7 @@ We maintain physical, technical, and administrative safeguards to protect your h
 CONTACT INFORMATION
 
 Privacy Officer
-MED VEST
+Medvst
 PO Box 8294, Van Nuys, CA 91410
 Phone: (818) 674-1211
 Email: info@medvst.com
@@ -1672,7 +1672,7 @@ Email: info@medvst.com
 If you believe your privacy rights have been violated, you may file a complaint with us or with the U.S. Department of Health and Human Services Office for Civil Rights.`,
       es: `ESTE AVISO DESCRIBE COMO SE PUEDE USAR Y DIVULGAR LA INFORMACION MEDICA SOBRE USTED Y COMO PUEDE OBTENER ACCESO A ESTA INFORMACION. POR FAVOR REVISELO CUIDADOSAMENTE.
 
-MED VEST esta comprometido con la proteccion de la privacidad de su informacion de salud. Este aviso explica como podemos usar y compartir su informacion de salud protegida (PHI) y sus derechos con respecto a esa informacion.
+Medvst esta comprometido con la proteccion de la privacidad de su informacion de salud. Este aviso explica como podemos usar y compartir su informacion de salud protegida (PHI) y sus derechos con respecto a esa informacion.
 
 COMO PODEMOS USAR Y DIVULGAR SU INFORMACION DE SALUD
 
@@ -1701,7 +1701,7 @@ Mantenemos salvaguardas fisicas, tecnicas y administrativas para proteger su inf
 INFORMACION DE CONTACTO
 
 Oficial de Privacidad
-MED VEST
+Medvst
 PO Box 8294, Van Nuys, CA 91410
 Telefono: (818) 674-1211
 Correo electronico: info@medvst.com
@@ -1714,7 +1714,7 @@ Si cree que se han violado sus derechos de privacidad, puede presentar una queja
     title: { en: 'Accessibility Statement', es: 'Declaracion de Accesibilidad' },
     lastUpdated: '2026-04-01',
     content: {
-      en: `MED VEST is committed to ensuring that our website is accessible to all users, including individuals with disabilities. We strive to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards.
+      en: `Medvst is committed to ensuring that our website is accessible to all users, including individuals with disabilities. We strive to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards.
 
 OUR COMMITMENT
 
@@ -1740,7 +1740,7 @@ Our website includes the following accessibility features:
 
 FEEDBACK
 
-We welcome your feedback on the accessibility of the MED VEST website. If you encounter any accessibility barriers or have suggestions for improvement, please contact us:
+We welcome your feedback on the accessibility of the Medvst website. If you encounter any accessibility barriers or have suggestions for improvement, please contact us:
 
 Email: info@medvst.com
 Phone: (818) 674-1211
@@ -1750,7 +1750,7 @@ We will make reasonable efforts to address accessibility issues and respond to y
 THIRD-PARTY CONTENT
 
 While we strive to ensure accessibility across our entire website, some third-party content or embedded elements may not be fully accessible. We are working with our third-party partners to improve accessibility wherever possible.`,
-      es: `MED VEST esta comprometido con garantizar que nuestro sitio web sea accesible para todos los usuarios, incluidas las personas con discapacidades. Nos esforzamos por cumplir con los estandares de las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1 Nivel AA.
+      es: `Medvst esta comprometido con garantizar que nuestro sitio web sea accesible para todos los usuarios, incluidas las personas con discapacidades. Nos esforzamos por cumplir con los estandares de las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1 Nivel AA.
 
 NUESTRO COMPROMISO
 
@@ -1776,7 +1776,7 @@ Nuestro sitio web incluye las siguientes caracteristicas de accesibilidad:
 
 COMENTARIOS
 
-Agradecemos sus comentarios sobre la accesibilidad del sitio web de MED VEST. Si encuentra barreras de accesibilidad o tiene sugerencias para mejorar, contactenos:
+Agradecemos sus comentarios sobre la accesibilidad del sitio web de Medvst. Si encuentra barreras de accesibilidad o tiene sugerencias para mejorar, contactenos:
 
 Correo electronico: info@medvst.com
 Telefono: (818) 674-1211
@@ -1797,12 +1797,12 @@ Si bien nos esforzamos por garantizar la accesibilidad en todo nuestro sitio web
 export const contactContent = {
   seo: {
     title: {
-      en: 'Contact Us | MED VEST Medicare Set-Aside Administration',
-      es: 'Contactenos | Administracion de Medicare Set-Aside MED VEST',
+      en: 'Contact Us | Medvst Medicare Set-Aside Administration',
+      es: 'Contactenos | Administracion de Medicare Set-Aside Medvst',
     },
     description: {
-      en: 'Contact MED VEST for a free consultation about Medicare Set-Aside administration, lien resolution, and settlement services. Call (818) 674-1211.',
-      es: 'Contacte a MED VEST para una consulta gratuita sobre administracion de Medicare Set-Aside, resolucion de gravamenes y servicios de acuerdos. Llame al (818) 674-1211.',
+      en: 'Contact Medvst for a free consultation about Medicare Set-Aside administration, lien resolution, and settlement services. Call (818) 674-1211.',
+      es: 'Contacte a Medvst para una consulta gratuita sobre administracion de Medicare Set-Aside, resolucion de gravamenes y servicios de acuerdos. Llame al (818) 674-1211.',
     },
   },
 
@@ -1845,12 +1845,12 @@ export const contactContent = {
 export const portalContent = {
   seo: {
     title: {
-      en: 'Client Portal | MED VEST',
-      es: 'Portal de Cliente | MED VEST',
+      en: 'Client Portal | Medvst',
+      es: 'Portal de Cliente | Medvst',
     },
     description: {
-      en: 'Access your MED VEST client portal to track your MSA balance, view payment history, download reports, and manage your account.',
-      es: 'Acceda a su portal de cliente MED VEST para rastrear su saldo MSA, ver el historial de pagos, descargar informes y administrar su cuenta.',
+      en: 'Access your Medvst client portal to track your MSA balance, view payment history, download reports, and manage your account.',
+      es: 'Acceda a su portal de cliente Medvst para rastrear su saldo MSA, ver el historial de pagos, descargar informes y administrar su cuenta.',
     },
   },
 
@@ -1897,8 +1897,8 @@ export const portalContent = {
     {
       title: { en: 'Direct Communication', es: 'Comunicacion Directa' },
       description: {
-        en: 'Send messages to your MED VEST team directly through the portal. Ask questions, request updates, or share information securely.',
-        es: 'Envie mensajes a su equipo de MED VEST directamente a traves del portal. Haga preguntas, solicite actualizaciones o comparta informacion de forma segura.',
+        en: 'Send messages to your Medvst team directly through the portal. Ask questions, request updates, or share information securely.',
+        es: 'Envie mensajes a su equipo de Medvst directamente a traves del portal. Haga preguntas, solicite actualizaciones o comparta informacion de forma segura.',
       },
     },
     {
@@ -1916,8 +1916,8 @@ export const portalContent = {
   },
 
   signupCta: {
-    en: 'Not a client yet? Contact us today for a free consultation and learn how MED VEST can help protect your settlement.',
-    es: 'Aun no es cliente? Contactenos hoy para una consulta gratuita y conozca como MED VEST puede ayudar a proteger su acuerdo.',
+    en: 'Not a client yet? Contact us today for a free consultation and learn how Medvst can help protect your settlement.',
+    es: 'Aun no es cliente? Contactenos hoy para una consulta gratuita y conozca como Medvst puede ayudar a proteger su acuerdo.',
   },
 };
 
@@ -1928,12 +1928,12 @@ export const portalContent = {
 export const homeContent = {
   seo: {
     title: {
-      en: 'MED VEST | Medicare Set-Aside Administration & Settlement Services',
-      es: 'MED VEST | Administracion de Medicare Set-Aside y Servicios de Acuerdos',
+      en: 'Medvst | Medicare Set-Aside Administration & Settlement Services',
+      es: 'Medvst | Administracion de Medicare Set-Aside y Servicios de Acuerdos',
     },
     description: {
-      en: 'MED VEST provides expert Medicare Set-Aside administration, lien resolution, and settlement consulting. Protecting your settlement and Medicare benefits nationwide.',
-      es: 'MED VEST proporciona administracion experta de Medicare Set-Aside, resolucion de gravamenes y consultoria de acuerdos. Protegiendo su acuerdo y beneficios de Medicare a nivel nacional.',
+      en: 'Medvst provides expert Medicare Set-Aside administration, lien resolution, and settlement consulting. Protecting your settlement and Medicare benefits nationwide.',
+      es: 'Medvst proporciona administracion experta de Medicare Set-Aside, resolucion de gravamenes y consultoria de acuerdos. Protegiendo su acuerdo y beneficios de Medicare a nivel nacional.',
     },
   },
 

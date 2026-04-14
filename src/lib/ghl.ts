@@ -1,5 +1,5 @@
 // =============================================================================
-// MED VEST — GoHighLevel (GHL) API Client
+// Medvst — GoHighLevel (GHL) API Client
 // Server-side only — uses environment variables for authentication
 // =============================================================================
 

@@ -58,8 +58,8 @@ export default function WhoWeServe() {
               </p>
               <p className="text-brown-400 leading-relaxed mb-6">
                 {isEs
-                  ? "MED VEST se encarga de todo el proceso de Medicare Set-Aside por usted. Protegemos su acuerdo, aseguramos su atención médica futura, y le hablamos en su idioma durante todo el proceso."
-                  : "MED VEST handles the entire Medicare Set-Aside process for you. We protect your settlement, secure your future medical care, and speak with you in your language through every step."}
+                  ? "Medvst se encarga de todo el proceso de Medicare Set-Aside por usted. Protegemos su acuerdo, aseguramos su atención médica futura, y le hablamos en su idioma durante todo el proceso."
+                  : "Medvst handles the entire Medicare Set-Aside process for you. We protect your settlement, secure your future medical care, and speak with you in your language through every step."}
               </p>
               <ul className="space-y-3">
                 {[
@@ -122,8 +122,8 @@ export default function WhoWeServe() {
               </p>
               <p className="text-brown-400 leading-relaxed">
                 {isEs
-                  ? "Cuando elige MED VEST, elige un equipo que lucha por su futuro como si fuera el nuestro."
-                  : "When you choose MED VEST, you choose a team that fights for your future as if it were our own."}
+                  ? "Cuando elige Medvst, elige un equipo que lucha por su futuro como si fuera el nuestro."
+                  : "When you choose Medvst, you choose a team that fights for your future as if it were our own."}
               </p>
             </div>
           </AnimateIn>

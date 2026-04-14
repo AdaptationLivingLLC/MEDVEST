@@ -17,20 +17,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: isEs
-      ? "Testimonios | MED VEST"
-      : "Testimonials | MED VEST",
+      ? "Testimonios | Medvst"
+      : "Testimonials | Medvst",
     description: isEs
-      ? "Lea lo que nuestros clientes dicen sobre MED VEST. Mas de 5,000 familias atendidas con calificacion de 5 estrellas."
-      : "Read what our clients say about MED VEST. Over 5,000 families served with 5-star ratings.",
+      ? "Lea lo que nuestros clientes dicen sobre Medvst. Mas de 5,000 familias atendidas con calificacion de 5 estrellas."
+      : "Read what our clients say about Medvst. Over 5,000 families served with 5-star ratings.",
     alternates: {
       canonical: `/${locale}/testimonials`,
       languages: { en: "/en/testimonials", es: "/es/testimonials" },
     },
     openGraph: {
-      title: isEs ? "Testimonios | MED VEST" : "Testimonials | MED VEST",
+      title: isEs ? "Testimonios | Medvst" : "Testimonials | Medvst",
       description: isEs
-        ? "Lea lo que nuestros clientes dicen sobre MED VEST."
-        : "Read what our clients say about MED VEST.",
+        ? "Lea lo que nuestros clientes dicen sobre Medvst."
+        : "Read what our clients say about Medvst.",
       url: `${businessInfo.url}/${locale}/testimonials`,
     },
   };

@@ -84,7 +84,7 @@ export default function HowItWorksPageContent() {
         <div className="container-main">
           <SectionHeader
             label={isEs ? "Que Esperar" : "What to Expect"}
-            title={isEs ? "Su Experiencia con MED VEST" : "Your Experience with MED VEST"}
+            title={isEs ? "Su Experiencia con Medvst" : "Your Experience with Medvst"}
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <AnimateIn delay={0} direction="up">

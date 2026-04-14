@@ -22,9 +22,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: {
       default: isSpanish
-        ? "MED VEST | Expertos en Medicare Set-Aside"
-        : "MED VEST | Medicare Set-Aside Experts",
-      template: isSpanish ? "%s | MED VEST" : "%s | MED VEST",
+        ? "Medvst | Expertos en Medicare Set-Aside"
+        : "Medvst | Medicare Set-Aside Experts",
+      template: isSpanish ? "%s | Medvst" : "%s | Medvst",
     },
     description: isSpanish
       ? "Administración experta de Medicare Set-Aside, resolución de gravámenes y consultoría de acuerdos. Protegiendo familias en todo el país."
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     openGraph: {
-      siteName: "MED VEST",
+      siteName: "Medvst",
       locale: locale === "es" ? "es_US" : "en_US",
       type: "website",
     },

@@ -17,19 +17,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: isEs
-      ? "Recursos y Articulos | MED VEST"
-      : "Resources & Articles | MED VEST",
+      ? "Recursos y Articulos | Medvst"
+      : "Resources & Articles | Medvst",
     description: isEs
-      ? "Articulos informativos sobre Medicare Set-Aside, administracion de MSA, resolución de gravamenes y mas. Recursos gratuitos de MED VEST."
-      : "Informative articles about Medicare Set-Aside, MSA administration, lien resolution, and more. Free resources from MED VEST.",
+      ? "Articulos informativos sobre Medicare Set-Aside, administracion de MSA, resolución de gravamenes y mas. Recursos gratuitos de Medvst."
+      : "Informative articles about Medicare Set-Aside, MSA administration, lien resolution, and more. Free resources from Medvst.",
     alternates: {
       canonical: `/${locale}/resources`,
       languages: { en: "/en/resources", es: "/es/resources" },
     },
     openGraph: {
       title: isEs
-        ? "Recursos y Articulos | MED VEST"
-        : "Resources & Articles | MED VEST",
+        ? "Recursos y Articulos | Medvst"
+        : "Resources & Articles | Medvst",
       description: isEs
         ? "Articulos informativos sobre Medicare Set-Aside y administracion de MSA."
         : "Informative articles about Medicare Set-Aside and MSA administration.",

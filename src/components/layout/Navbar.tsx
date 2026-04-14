@@ -28,7 +28,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="text-white font-bold text-base tracking-widest leading-none uppercase">
-                MED VEST
+                Medvst
               </span>
               <span className="text-white/40 text-[9px] tracking-wider uppercase leading-none mt-1">
                 {t("home") === "Inicio"

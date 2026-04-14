@@ -37,8 +37,8 @@ export default async function HowItWorksPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "HowTo",
     name: isEs
-      ? "Como funciona la administracion de Medicare Set-Aside con MED VEST"
-      : "How Medicare Set-Aside Administration Works with MED VEST",
+      ? "Como funciona la administracion de Medicare Set-Aside con Medvst"
+      : "How Medicare Set-Aside Administration Works with Medvst",
     description: howItWorksContent.seo.description[lang],
     step: howItWorksContent.steps.map((s) => ({
       "@type": "HowToStep",

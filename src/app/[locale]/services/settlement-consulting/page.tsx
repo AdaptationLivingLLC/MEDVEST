@@ -41,7 +41,7 @@ export default async function SettlementConsultingPage({ params }: Props) {
     description: service.seo.description[lang],
     provider: {
       "@type": "Organization",
-      name: "MED VEST",
+      name: "Medvst",
       url: "https://medvst.com",
     },
     areaServed: { "@type": "Country", name: "United States" },

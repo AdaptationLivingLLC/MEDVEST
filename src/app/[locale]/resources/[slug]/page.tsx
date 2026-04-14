@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = isEs ? article.descriptionEs : article.description;
 
   return {
-    title: `${title} | MED VEST`,
+    title: `${title} | Medvst`,
     description,
     alternates: {
       canonical: `/${locale}/resources/${slug}`,
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: `${title} | MED VEST`,
+      title: `${title} | Medvst`,
       description,
       url: `https://medvst.com/${locale}/resources/${slug}`,
       type: "article",
@@ -156,7 +156,7 @@ export default async function ArticlePage({ params }: Props) {
     },
     publisher: {
       "@type": "Organization",
-      name: "MED VEST",
+      name: "Medvst",
       url: "https://medvst.com",
       logo: {
         "@type": "ImageObject",
