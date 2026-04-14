@@ -154,15 +154,15 @@ export default async function PortalPage({ params }: Props) {
                     </svg>
                   </div>
                   <h2 className="font-display text-brown-900 text-xl lg:text-2xl font-semibold mb-3">
-                    {isEs ? "Portal Proximamente" : "Portal Coming Soon"}
+                    {isEs ? "Acceder al Portal" : "Access Your Portal"}
                   </h2>
                   <p className="text-brown-400 leading-relaxed mb-6">
                     {isEs
-                      ? "Estamos construyendo su portal seguro de cliente. Mientras tanto, contactenos para actualizaciones sobre su caso."
-                      : "We are building your secure client portal. In the meantime, contact us for case updates."}
+                      ? "Inicie sesión para ver el estado de su caso, subir documentos y comunicarse con nuestro equipo."
+                      : "Log in to view your case status, upload documents, and communicate with our team."}
                   </p>
-                  <Button href="/contact" variant="primary" size="lg">
-                    {isEs ? "Contactenos para Actualizaciones" : "Contact Us for Updates"}
+                  <Button href="https://ABxgFApScndDJpUIDcl9.app.clientclub.net/" variant="primary" size="lg" external>
+                    {isEs ? "Iniciar Sesión en el Portal" : "Log In to Portal"}
                   </Button>
                 </div>
 
