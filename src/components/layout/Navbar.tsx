@@ -18,19 +18,19 @@ export default function Navbar() {
   const t = useTranslations("nav");
 
   return (
-    <header className="sticky top-0 z-50 bg-cream-100/95 backdrop-blur-sm border-b border-cream-400">
+    <header className="sticky top-0 z-50 bg-navy-dark/95 backdrop-blur-md border-b border-white/10">
       <div className="container-main">
         <nav className="flex items-center justify-between h-[73px]">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-9 h-9 bg-gradient-to-br from-brown-500 to-copper rounded-lg flex items-center justify-center">
-              <span className="text-cream-100 font-bold text-sm">MV</span>
+            <div className="w-10 h-10 bg-gradient-to-br from-gold to-gold-light rounded-lg flex items-center justify-center shadow-md">
+              <span className="text-navy-dark font-bold text-sm tracking-wide">MV</span>
             </div>
             <div className="flex flex-col">
-              <span className="text-brown-900 font-bold text-base tracking-wide leading-none">
+              <span className="text-white font-bold text-base tracking-widest leading-none uppercase">
                 MED VEST
               </span>
-              <span className="text-brown-300 text-[10px] tracking-wider uppercase leading-none mt-0.5">
+              <span className="text-white/40 text-[9px] tracking-wider uppercase leading-none mt-1">
                 {t("home") === "Inicio"
                   ? "Expertos en Medicare Set-Aside"
                   : "Medicare Set-Aside Experts"}
@@ -45,18 +45,18 @@ export default function Navbar() {
                 <li key={item.key}>
                   <Link
                     href={item.href}
-                    className="text-sm font-medium text-brown-400 hover:text-brown-900 transition-colors"
+                    className="text-sm font-medium text-white/70 hover:text-white transition-colors"
                   >
                     {t(item.key)}
                   </Link>
                 </li>
               ))}
             </ul>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
               <LanguageToggle />
               <Link
                 href="/contact"
-                className="bg-brown-900 text-cream-100 px-5 py-2.5 rounded-button text-sm font-semibold hover:bg-brown-800 transition-colors"
+                className="bg-gold text-navy-dark px-5 py-2.5 rounded-button text-sm font-bold hover:bg-gold-light transition-colors uppercase tracking-wide"
               >
                 {t("getStarted")}
               </Link>

@@ -4,7 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import { inter, playfairDisplay } from "@/lib/fonts";
+import { inter, cinzel } from "@/lib/fonts";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "../globals.css";
@@ -65,7 +65,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${playfairDisplay.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${cinzel.variable}`}>
       <head>
         {/* Google Tag Manager */}
         <script

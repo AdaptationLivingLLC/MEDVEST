@@ -9,17 +9,17 @@ export default function CTABand() {
   const meta = useTranslations("meta");
 
   return (
-    <section className="bg-brown-900 py-16 lg:py-20">
+    <section className="bg-cream-200 py-16 lg:py-20 border-t border-cream-400">
       <div className="container-main text-center">
         <AnimateIn direction="up">
-          <h2 className="font-display text-h2-mobile lg:text-h2-desktop text-cream-100">
+          <h2 className="font-display text-h2-mobile lg:text-h2-desktop text-brown-900">
             {t("title")}
           </h2>
-          <p className="mt-3 text-cream-500 text-base lg:text-lg max-w-lg mx-auto">
+          <p className="mt-3 text-brown-400 text-base lg:text-lg max-w-lg mx-auto">
             {t("subtitle")}
           </p>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button href="/contact" variant="dark" size="lg">
+            <Button href="/contact" variant="primary" size="lg" className="bg-success text-white hover:bg-success-light font-bold uppercase tracking-wide">
               {t("primary")}
             </Button>
             <Button
@@ -27,12 +27,12 @@ export default function CTABand() {
               variant="outline"
               size="lg"
               external
-              className="border-cream-500 text-cream-100 hover:bg-cream-100 hover:text-brown-900"
+              className="border-brown-900 text-brown-900 hover:bg-brown-900 hover:text-white"
             >
               {t("secondary")} {meta("phone")}
             </Button>
           </div>
-          <p className="mt-5 text-sm text-copper font-semibold">
+          <p className="mt-5 text-sm text-success font-semibold">
             {t("spanish")}
           </p>
         </AnimateIn>

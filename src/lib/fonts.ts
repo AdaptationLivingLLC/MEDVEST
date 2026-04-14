@@ -1,4 +1,4 @@
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Cinzel } from "next/font/google";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -6,7 +6,7 @@ export const inter = Inter({
   variable: "--font-body",
 });
 
-export const playfairDisplay = Playfair_Display({
+export const cinzel = Cinzel({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-display",

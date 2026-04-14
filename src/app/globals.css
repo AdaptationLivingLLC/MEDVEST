@@ -10,7 +10,7 @@
   }
 
   body {
-    @apply bg-cream-100 text-brown-400 font-body leading-relaxed;
+    @apply bg-white text-brown-400 font-body leading-relaxed;
   }
 
   h1, h2, h3, h4, h5, h6 {
