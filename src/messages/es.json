@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "siteName": "MED VEST",
+    "tagline": "Expertos en Medicare Set-Aside",
+    "phone": "(818) 674-1211",
+    "email": "info@medvst.com",
+    "address": "PO Box 8294, Van Nuys, CA 91410"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "howItWorks": "Cómo Funciona",
+    "results": "Resultados",
+    "testimonials": "Testimonios",
+    "faq": "Preguntas Frecuentes",
+    "contact": "Contacto",
+    "portal": "Portal del Cliente",
+    "resources": "Recursos",
+    "getStarted": "Comenzar",
+    "callUs": "Llámenos"
+  },
+  "hero": {
+    "label": "Expertos en Medicare Set-Aside",
+    "title": "Su Acuerdo Está En",
+    "titleAccent": "Buenas Manos",
+    "subtitle": "Aportamos calidez y experiencia al complejo cumplimiento de Medicare. Personas reales, cuidado real, resultados reales.",
+    "cta": "Comience Su Consulta Gratuita",
+    "ctaSecondary": "Cómo Funciona",
+    "orCall": "o llame al"
+  },
+  "stats": {
+    "administered": "Administrados",
+    "families": "Familias Atendidas",
+    "compliance": "Cumplimiento CMS"
+  },
+  "howItWorks": {
+    "sectionTitle": "Cómo Funciona",
+    "step1Title": "Contáctenos",
+    "step1Desc": "Consulta gratuita para entender su situación",
+    "step2Title": "Revisamos y Planificamos",
+    "step2Desc": "Nuestros expertos analizan su caso y crean su plan",
+    "step3Title": "Nos Encargamos de Todo",
+    "step3Desc": "Administración completa, cumplimiento e informes",
+    "step4Title": "Siga Su Progreso",
+    "step4Desc": "Inicie sesión en cualquier momento para ver el estado de su caso"
+  },
+  "services": {
+    "sectionTitle": "Cómo Ayudamos",
+    "sectionSubtitle": "Soluciones integrales de Medicare Set-Aside adaptadas a sus necesidades",
+    "msa": {
+      "title": "Administración MSA",
+      "desc": "Gestión completa del ciclo de vida, cumplimiento CMS, asesor dedicado para su cuenta"
+    },
+    "lien": {
+      "title": "Resolución de Gravámenes",
+      "desc": "Negociación y liquidación documentada de gravámenes de Medicare, Medicaid y ERISA"
+    },
+    "consulting": {
+      "title": "Consultoría de Acuerdos",
+      "desc": "Análisis previo al acuerdo, proyecciones de costos y estrategias de preservación de beneficios"
+    },
+    "trust": {
+      "title": "Servicios Fiduciarios",
+      "desc": "Fideicomisos para necesidades especiales, fondos de liquidación calificados y cumplimiento fiduciario"
+    },
+    "liability": {
+      "title": "Acuerdos de Responsabilidad",
+      "desc": "Soluciones LMSA personalizadas para cumplimiento de acuerdos de responsabilidad y sin culpa"
+    },
+    "learnMore": "Más Información"
+  },
+  "results": {
+    "sectionTitle": "Resultados Comprobados",
+    "sectionSubtitle": "Resultados reales para familias reales"
+  },
+  "testimonials": {
+    "sectionTitle": "Lo Que Dicen Nuestros Clientes",
+    "sectionSubtitle": "La confianza de miles de familias en todo el país"
+  },
+  "faq": {
+    "sectionTitle": "Preguntas Frecuentes",
+    "stillHaveQuestions": "¿Todavía tiene preguntas?",
+    "contactUs": "Contáctenos"
+  },
+  "cta": {
+    "title": "¿Listo Para Comenzar?",
+    "subtitle": "Consulta gratuita. Sin compromiso. Estamos aquí para ayudar.",
+    "primary": "Programe Su Llamada Gratuita",
+    "secondary": "Llamar al",
+    "spanish": "Hablamos Español"
+  },
+  "footer": {
+    "description": "Administración confiable de Medicare Set-Aside, resolución de gravámenes y consultoría de acuerdos. Protegiendo familias y asegurando cumplimiento en todo el país.",
+    "quickLinks": "Enlaces Rápidos",
+    "ourServices": "Servicios",
+    "contactUs": "Contáctenos",
+    "legal": "Legal",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "hipaa": "Aviso HIPAA",
+    "accessibility": "Accesibilidad",
+    "copyright": "© 2026 MED VEST. Todos los derechos reservados.",
+    "builtBy": "Sitio web creado por Brandon Bible, Adaptation Living LLC"
+  }
+}

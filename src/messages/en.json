@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "siteName": "MED VEST",
+    "tagline": "Medicare Set-Aside Experts",
+    "phone": "(818) 674-1211",
+    "email": "info@medvst.com",
+    "address": "PO Box 8294, Van Nuys, CA 91410"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "howItWorks": "How It Works",
+    "results": "Results",
+    "testimonials": "Testimonials",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "portal": "Client Portal",
+    "resources": "Resources",
+    "getStarted": "Get Started",
+    "callUs": "Call Us"
+  },
+  "hero": {
+    "label": "Medicare Set-Aside Experts",
+    "title": "Your Settlement Is In",
+    "titleAccent": "Safe Hands",
+    "subtitle": "We bring warmth and expertise to complex Medicare compliance. Real people, real care, real results.",
+    "cta": "Start Your Free Consultation",
+    "ctaSecondary": "How It Works",
+    "orCall": "or call"
+  },
+  "stats": {
+    "administered": "Administered",
+    "families": "Families Served",
+    "compliance": "CMS Compliance"
+  },
+  "howItWorks": {
+    "sectionTitle": "How It Works",
+    "step1Title": "Contact Us",
+    "step1Desc": "Free consultation to understand your situation",
+    "step2Title": "We Review & Plan",
+    "step2Desc": "Our experts analyze your case and create your plan",
+    "step3Title": "We Handle Everything",
+    "step3Desc": "Full administration, compliance, and reporting",
+    "step4Title": "Track Your Progress",
+    "step4Desc": "Log in anytime to see your case status"
+  },
+  "services": {
+    "sectionTitle": "How We Help",
+    "sectionSubtitle": "Comprehensive Medicare Set-Aside solutions tailored to your needs",
+    "msa": {
+      "title": "MSA Administration",
+      "desc": "Full lifecycle management, CMS compliance, dedicated caseworker for your account"
+    },
+    "lien": {
+      "title": "Lien Resolution",
+      "desc": "Medicare, Medicaid, and ERISA lien negotiation and documented clearance"
+    },
+    "consulting": {
+      "title": "Settlement Consulting",
+      "desc": "Pre-settlement analysis, cost projections, and benefit preservation strategies"
+    },
+    "trust": {
+      "title": "Trust Services",
+      "desc": "Special Needs Trusts, Qualified Settlement Funds, and fiduciary compliance"
+    },
+    "liability": {
+      "title": "Liability Settlements",
+      "desc": "Tailored LMSA solutions for liability and no-fault settlement compliance"
+    },
+    "learnMore": "Learn More"
+  },
+  "results": {
+    "sectionTitle": "Proven Results",
+    "sectionSubtitle": "Real outcomes for real families"
+  },
+  "testimonials": {
+    "sectionTitle": "What Our Clients Say",
+    "sectionSubtitle": "Trusted by thousands of families nationwide"
+  },
+  "faq": {
+    "sectionTitle": "Frequently Asked Questions",
+    "stillHaveQuestions": "Still have questions?",
+    "contactUs": "Contact us"
+  },
+  "cta": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Free consultation. No obligation. We're here to help.",
+    "primary": "Schedule Your Free Call",
+    "secondary": "Call",
+    "spanish": "Hablamos Español"
+  },
+  "footer": {
+    "description": "Trusted Medicare Set-Aside administration, lien resolution, and settlement consulting. Protecting families and ensuring compliance nationwide.",
+    "quickLinks": "Quick Links",
+    "ourServices": "Services",
+    "contactUs": "Contact Us",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "hipaa": "HIPAA Notice",
+    "accessibility": "Accessibility",
+    "copyright": "© 2026 MED VEST. All rights reserved.",
+    "builtBy": "Website custom built by Brandon Bible, Adaptation Living LLC"
+  }
+}
