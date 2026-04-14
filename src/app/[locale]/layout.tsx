@@ -96,6 +96,13 @@ export default async function LocaleLayout({ children, params }: Props) {
           {children}
           <Footer />
         </NextIntlClientProvider>
+        {/* GHL Chat Widget */}
+        <script
+          src="https://widgets.leadconnectorhq.com/loader.js"
+          data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+          data-widget-id="69de5eba9f3b6f02617c0605"
+          async
+        />
       </body>
     </html>
   );
