@@ -15,9 +15,7 @@ const routes = [
   { path: "/testimonials", changeFrequency: "monthly" as const, priority: 0.7 },
   { path: "/faq", changeFrequency: "monthly" as const, priority: 0.8 },
   { path: "/contact", changeFrequency: "monthly" as const, priority: 0.8 },
-  { path: "/portal", changeFrequency: "monthly" as const, priority: 0.5 },
   { path: "/resources", changeFrequency: "weekly" as const, priority: 0.7 },
-  { path: "/legal", changeFrequency: "yearly" as const, priority: 0.3 },
 ];
 
 const locales = ["en", "es"];

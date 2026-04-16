@@ -15,12 +15,12 @@ const caseTypes = {
   ],
   es: [
     { value: "", label: "Seleccione tipo de caso..." },
-    { value: "msa-administration", label: "Administracion MSA" },
-    { value: "lien-resolution", label: "Resolucion de Gravamenes" },
-    { value: "settlement-consulting", label: "Consultoria de Acuerdos" },
+    { value: "msa-administration", label: "Administración MSA" },
+    { value: "lien-resolution", label: "Resolución de Gravámenes" },
+    { value: "settlement-consulting", label: "Consultoría de Acuerdos" },
     { value: "trust-services", label: "Servicios de Fideicomiso" },
     { value: "liability-settlements", label: "Acuerdos de Responsabilidad Civil" },
-    { value: "other", label: "Otro / No Estoy Seguro" },
+    { value: "other", label: "Otro / No estoy seguro" },
   ],
 };
 
@@ -33,21 +33,25 @@ const labels = {
     message: "Tell us about your situation",
     submit: "Send Message",
     submitting: "Sending...",
-    success: "Thank you! We will contact you within one business day.",
+    success: "Thank you. We will contact you within one business day.",
     error: "Something went wrong. Please try again or call us directly.",
+    validEmail: "Please enter a valid email address.",
   },
   es: {
     name: "Nombre Completo",
-    email: "Correo Electronico",
-    phone: "Numero de Telefono",
+    email: "Correo Electrónico",
+    phone: "Número de Teléfono",
     caseType: "Tipo de Caso",
-    message: "Cuentenos sobre su situacion",
+    message: "Cuéntenos sobre su situación",
     submit: "Enviar Mensaje",
     submitting: "Enviando...",
-    success: "Gracias! Nos comunicaremos con usted dentro de un dia habil.",
-    error: "Algo salio mal. Intentelo de nuevo o llamenos directamente.",
+    success: "Gracias. Nos comunicaremos con usted dentro de un día hábil.",
+    error: "Algo salió mal. Inténtelo de nuevo o llámenos directamente.",
+    validEmail: "Por favor ingrese un correo electrónico válido.",
   },
 };
+
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export default function ContactForm() {
   const locale = useLocale();
@@ -55,21 +59,42 @@ export default function ContactForm() {
   const l = isEs ? labels.es : labels.en;
   const types = isEs ? caseTypes.es : caseTypes.en;
 
-  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "submitting" | "success" | "error" | "invalid"
+  >("idle");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setStatus("submitting");
 
     const form = e.currentTarget;
     const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
+    const name = String(formData.get("name") ?? "").trim();
+    const email = String(formData.get("email") ?? "").trim();
+    const phone = String(formData.get("phone") ?? "").trim();
+    const caseType = String(formData.get("caseType") ?? "");
+    const message = String(formData.get("message") ?? "").trim();
+    const website = String(formData.get("website") ?? "");
+
+    if (!name || !EMAIL_RE.test(email)) {
+      setStatus("invalid");
+      return;
+    }
+
+    setStatus("submitting");
 
     try {
       const res = await fetch("/api/ghl/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, locale }),
+        body: JSON.stringify({
+          name,
+          email,
+          phone,
+          caseType,
+          message,
+          locale,
+          website,
+        }),
       });
 
       if (res.ok) {
@@ -87,7 +112,21 @@ export default function ContactForm() {
     "w-full px-4 py-3 bg-white border border-cream-400 rounded-card text-brown-900 placeholder:text-brown-300 focus:outline-none focus:ring-2 focus:ring-copper focus:border-copper transition-colors";
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+      <div
+        aria-hidden="true"
+        style={{ position: "absolute", left: "-9999px", top: "-9999px" }}
+      >
+        <label htmlFor="website">Website (leave blank)</label>
+        <input
+          type="text"
+          id="website"
+          name="website"
+          tabIndex={-1}
+          autoComplete="off"
+        />
+      </div>
+
       <div>
         <label htmlFor="name" className="block text-sm font-semibold text-brown-900 mb-1.5">
           {l.name} *
@@ -97,6 +136,8 @@ export default function ContactForm() {
           id="name"
           name="name"
           required
+          maxLength={120}
+          autoComplete="name"
           className={inputClasses}
           placeholder={l.name}
         />
@@ -112,6 +153,8 @@ export default function ContactForm() {
             id="email"
             name="email"
             required
+            maxLength={254}
+            autoComplete="email"
             className={inputClasses}
             placeholder={l.email}
           />
@@ -124,6 +167,8 @@ export default function ContactForm() {
             type="tel"
             id="phone"
             name="phone"
+            maxLength={32}
+            autoComplete="tel"
             className={inputClasses}
             placeholder={l.phone}
           />
@@ -152,6 +197,7 @@ export default function ContactForm() {
           name="message"
           required
           rows={5}
+          maxLength={4000}
           className={inputClasses}
           placeholder={l.message}
         />
@@ -166,13 +212,28 @@ export default function ContactForm() {
       </button>
 
       {status === "success" && (
-        <p className="text-green-700 bg-green-50 border border-green-200 rounded-card p-4 text-sm text-center">
+        <p
+          role="status"
+          className="text-green-700 bg-green-50 border border-green-200 rounded-card p-4 text-sm text-center"
+        >
           {l.success}
         </p>
       )}
 
+      {status === "invalid" && (
+        <p
+          role="alert"
+          className="text-red-700 bg-red-50 border border-red-200 rounded-card p-4 text-sm text-center"
+        >
+          {l.validEmail}
+        </p>
+      )}
+
       {status === "error" && (
-        <p className="text-red-700 bg-red-50 border border-red-200 rounded-card p-4 text-sm text-center">
+        <p
+          role="alert"
+          className="text-red-700 bg-red-50 border border-red-200 rounded-card p-4 text-sm text-center"
+        >
           {l.error}
         </p>
       )}
