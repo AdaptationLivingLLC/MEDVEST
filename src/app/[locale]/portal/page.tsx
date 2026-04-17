@@ -6,6 +6,7 @@ import Card from "@/components/ui/Card";
 import SectionHeader from "@/components/ui/SectionHeader";
 import Button from "@/components/ui/Button";
 import CTABand from "@/components/sections/CTABand";
+import AppDownload from "@/components/sections/AppDownload";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -161,8 +162,8 @@ export default async function PortalPage({ params }: Props) {
                       ? "Inicie sesión para ver el estado de su caso, subir documentos y comunicarse con nuestro equipo."
                       : "Log in to view your case status, upload documents, and communicate with our team."}
                   </p>
-                  <Button href="https://ABxgFApScndDJpUIDcl9.app.clientclub.net/" variant="primary" size="lg" external>
-                    {isEs ? "Iniciar Sesión en el Portal" : "Log In to Portal"}
+                  <Button href="/intake" variant="primary" size="lg">
+                    {isEs ? "Comenzar Admisión" : "Start Intake"}
                   </Button>
                 </div>
 
@@ -177,6 +178,7 @@ export default async function PortalPage({ params }: Props) {
           </div>
         </section>
 
+        <AppDownload />
         <CTABand />
       </main>
     </>

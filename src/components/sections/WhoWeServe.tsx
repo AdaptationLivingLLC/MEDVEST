@@ -1,14 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useTranslations, useLocale } from "next-intl";
+import { useLocale } from "next-intl";
 import AnimateIn from "@/components/ui/AnimateIn";
 import SectionHeader from "@/components/ui/SectionHeader";
 
 export default function WhoWeServe() {
   const locale = useLocale();
   const isEs = locale === "es";
-  const t = useTranslations("whoWeServe");
 
   return (
     <section className="py-section lg:py-section-lg bg-white">

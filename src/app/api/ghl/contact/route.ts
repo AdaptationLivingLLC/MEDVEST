@@ -53,7 +53,7 @@ export async function POST(request: Request) {
     const referer = request.headers.get("referer") ?? "";
     const originOk =
       ALLOWED_ORIGINS.has(origin) ||
-      [...ALLOWED_ORIGINS].some((o) => referer.startsWith(o));
+      Array.from(ALLOWED_ORIGINS).some((o) => referer.startsWith(o));
     if (process.env.NODE_ENV === "production" && !originOk) {
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
