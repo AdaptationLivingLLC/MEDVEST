@@ -16,12 +16,14 @@ import {
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
-export const maxDuration = 60;
+export const maxDuration = 300;
 
 const MAX_TOTAL_BYTES = Number(
-  process.env.INTAKE_MAX_TOTAL_UPLOAD_BYTES || 20 * 1024 * 1024
+  process.env.INTAKE_MAX_TOTAL_UPLOAD_BYTES || 95 * 1024 * 1024
 );
-const MAX_PER_FILE_BYTES = 10 * 1024 * 1024;
+const MAX_PER_FILE_BYTES = Number(
+  process.env.INTAKE_MAX_PER_FILE_BYTES || 95 * 1024 * 1024
+);
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_RE = /^[+\d][\d\s\-().]{6,20}$/;
 
@@ -129,7 +131,7 @@ export async function POST(request: Request) {
     for (const f of allFiles) {
       if (f.size > MAX_PER_FILE_BYTES) {
         return NextResponse.json(
-          { error: `File "${f.name}" is too large (max 10 MB each).` },
+          { error: `File "${f.name}" is too large (max ${Math.floor(MAX_PER_FILE_BYTES / 1024 / 1024)} MB each).` },
           { status: 413 }
         );
       }
