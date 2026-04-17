@@ -33,6 +33,12 @@ const INTAKE_CUSTOM_FIELDS = [
   { name: "Intake Reason", dataType: "LARGE_TEXT" as const },
   { name: "Drive Folder URL", dataType: "TEXT" as const },
   { name: "Drive Folder Name", dataType: "TEXT" as const },
+  { name: "HIPAA Authorization Given", dataType: "TEXT" as const },
+  { name: "HIPAA Authorization Timestamp", dataType: "TEXT" as const },
+  { name: "Contact Opt-In Given", dataType: "TEXT" as const },
+  { name: "Contact Opt-In Timestamp", dataType: "TEXT" as const },
+  { name: "Consent IP Address", dataType: "TEXT" as const },
+  { name: "Consent User Agent", dataType: "TEXT" as const },
   { name: "OCR DOB", dataType: "TEXT" as const },
   { name: "OCR License Number", dataType: "TEXT" as const },
   { name: "OCR License Expiration", dataType: "TEXT" as const },
@@ -84,6 +90,31 @@ export async function POST(request: Request) {
       .slice(0, 10);
     const locale = String(form.get("locale") || "en") === "es" ? "es" : "en";
     const reason = String(form.get("reason") || "").trim().slice(0, 4000);
+
+    const hipaaAuth = String(form.get("hipaaAuth") || "") === "true";
+    const contactOptIn = String(form.get("contactOptIn") || "") === "true";
+    const consentTimestamp =
+      String(form.get("consentTimestamp") || "").trim().slice(0, 40) ||
+      new Date().toISOString();
+    const consentIp =
+      request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+      request.headers.get("x-real-ip") ||
+      "unknown";
+    const consentUserAgent = (request.headers.get("user-agent") || "")
+      .slice(0, 500);
+
+    if (!hipaaAuth) {
+      return NextResponse.json(
+        { error: "HIPAA authorization is required to process your intake." },
+        { status: 400 }
+      );
+    }
+    if (!contactOptIn) {
+      return NextResponse.json(
+        { error: "Contact consent is required to process your intake." },
+        { status: 400 }
+      );
+    }
 
     if (!firstName || !lastName) {
       return NextResponse.json(
@@ -271,12 +302,23 @@ export async function POST(request: Request) {
     setField("Intake Reason", reason);
     setField("Drive Folder URL", folderUrl);
     setField("Drive Folder Name", folderName);
+    setField("HIPAA Authorization Given", "yes");
+    setField("HIPAA Authorization Timestamp", consentTimestamp);
+    setField("Contact Opt-In Given", "yes");
+    setField("Contact Opt-In Timestamp", consentTimestamp);
+    setField("Consent IP Address", consentIp);
+    setField("Consent User Agent", consentUserAgent);
     for (const [name, value] of Object.entries(ocrData)) {
       setField(name, value);
     }
 
     // Upsert contact
-    const tags = ["intake-complete", `locale:${locale}`];
+    const tags = [
+      "intake-complete",
+      `locale:${locale}`,
+      "hipaa-authorized",
+      "sms-opt-in",
+    ];
     const { contactId, created } = await upsertContact({
       firstName,
       lastName,
@@ -308,6 +350,8 @@ export async function POST(request: Request) {
             .map(([k, v]) => `${k.replace("OCR ", "")}=${v}`)
             .join("; ")}`
         : undefined,
+      `Consent: HIPAA=yes, SMS/Email Opt-In=yes @ ${consentTimestamp} from ${consentIp}`,
+      `User-Agent: ${consentUserAgent || "unknown"}`,
     ].filter(Boolean) as string[];
     await createNote(contactId, summaryLines.join("\n"));
 

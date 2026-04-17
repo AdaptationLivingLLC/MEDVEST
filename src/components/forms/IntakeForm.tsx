@@ -49,6 +49,16 @@ const labels = {
     replaceFile: "Replace",
     consent:
       "By submitting, you consent to Medvst processing the information and documents you provide.",
+    hipaaTitle: "HIPAA Compliant & Federally Protected",
+    hipaaBody:
+      "Your uploads are encrypted in transit (TLS 1.3) and at rest (AES-256). Medvst fully complies with HIPAA, HITECH, 42 CFR Part 2, the ADA, and all applicable federal and state privacy laws. We never sell your information and never disclose Protected Health Information without your written authorization, except as permitted by law.",
+    hipaaLinkLabel: "Read our full HIPAA Notice of Privacy Practices →",
+    hipaaAuthLabel:
+      "HIPAA Authorization (required): I authorize Medvst to collect, use, and disclose my Protected Health Information (PHI), medical records, and insurance information solely for the purpose of evaluating and processing my Medicare Set-Aside case. I understand I may revoke this authorization in writing at any time.",
+    contactOptInLabel:
+      "Contact consent (required): I agree to be contacted by Medvst at the phone number and email I provided, including by SMS, email, and autodialed or prerecorded calls about my case. Message and data rates may apply. Reply STOP to opt out. Consent is not a condition of service.",
+    authRequired: "You must authorize Medvst to process your PHI to continue.",
+    optInRequired: "You must agree to be contacted about your case to continue.",
   },
   es: {
     eyebrow: "Admisión Segura de Pacientes",
@@ -94,6 +104,16 @@ const labels = {
     replaceFile: "Reemplazar",
     consent:
       "Al enviar, usted da su consentimiento para que Medvst procese la información y los documentos proporcionados.",
+    hipaaTitle: "Cumple con HIPAA y Protegido Federalmente",
+    hipaaBody:
+      "Sus archivos se cifran en tránsito (TLS 1.3) y en reposo (AES-256). Medvst cumple totalmente con HIPAA, HITECH, 42 CFR Parte 2, la ADA y todas las leyes federales y estatales de privacidad aplicables. Nunca vendemos su información ni divulgamos Información de Salud Protegida sin su autorización escrita, excepto cuando la ley lo permita.",
+    hipaaLinkLabel: "Lea nuestro Aviso completo de Prácticas de Privacidad HIPAA →",
+    hipaaAuthLabel:
+      "Autorización HIPAA (requerido): Autorizo a Medvst a recopilar, usar y divulgar mi Información de Salud Protegida (PHI), registros médicos e información de seguro únicamente con el fin de evaluar y procesar mi caso de Medicare Set-Aside. Entiendo que puedo revocar esta autorización por escrito en cualquier momento.",
+    contactOptInLabel:
+      "Consentimiento de contacto (requerido): Acepto ser contactado por Medvst al teléfono y correo electrónico que proporcioné, incluyendo por SMS, correo electrónico y llamadas automáticas o pregrabadas sobre mi caso. Pueden aplicar tarifas de mensajería y datos. Responda STOP para cancelar. El consentimiento no es condición para recibir el servicio.",
+    authRequired: "Debe autorizar a Medvst a procesar su PHI para continuar.",
+    optInRequired: "Debe aceptar ser contactado sobre su caso para continuar.",
   },
 };
 
@@ -167,6 +187,9 @@ export default function IntakeForm({
     status: "idle",
   });
   const [medicalRecords, setMedicalRecords] = useState<File[]>([]);
+
+  const [hipaaAuth, setHipaaAuth] = useState(false);
+  const [contactOptIn, setContactOptIn] = useState(false);
 
   const [submitStatus, setSubmitStatus] = useState<
     "idle" | "submitting" | "success" | "error"
@@ -255,6 +278,16 @@ export default function IntakeForm({
       setSubmitStatus("error");
       return;
     }
+    if (!hipaaAuth) {
+      setSubmitError(l.authRequired);
+      setSubmitStatus("error");
+      return;
+    }
+    if (!contactOptIn) {
+      setSubmitError(l.optInRequired);
+      setSubmitStatus("error");
+      return;
+    }
 
     setSubmitStatus("submitting");
 
@@ -270,6 +303,9 @@ export default function IntakeForm({
     fd.append("postalCode", form.postalCode);
     fd.append("reason", form.reason);
     fd.append("locale", locale);
+    fd.append("hipaaAuth", hipaaAuth ? "true" : "false");
+    fd.append("contactOptIn", contactOptIn ? "true" : "false");
+    fd.append("consentTimestamp", new Date().toISOString());
     fd.append("website", ""); // honeypot
     if (licenseField.file) fd.append("license", licenseField.file);
     if (insuranceFront.file) fd.append("insuranceFront", insuranceFront.file);
@@ -293,6 +329,8 @@ export default function IntakeForm({
       setInsuranceBack({ file: null, status: "idle" });
       setMedicare({ file: null, status: "idle" });
       setMedicalRecords([]);
+      setHipaaAuth(false);
+      setContactOptIn(false);
     } catch {
       setSubmitError(l.error);
       setSubmitStatus("error");
@@ -372,6 +410,44 @@ export default function IntakeForm({
           tabIndex={-1}
           autoComplete="off"
         />
+      </div>
+
+      {/* HIPAA / Federal compliance notice — visible directly next to the uploader */}
+      <div
+        role="note"
+        aria-label={l.hipaaTitle}
+        className="mb-4 rounded-card-lg border-l-4 border-success bg-success/5 p-4 sm:p-5"
+      >
+        <div className="flex gap-3">
+          <svg
+            className="w-6 h-6 flex-shrink-0 text-success mt-0.5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={1.75}
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+            />
+          </svg>
+          <div className="min-w-0">
+            <p className="font-semibold text-brown-900 text-sm leading-snug">
+              {l.hipaaTitle}
+            </p>
+            <p className="text-brown-500 text-[13px] leading-relaxed mt-1">
+              {l.hipaaBody}
+            </p>
+            <a
+              href={`/${locale}/legal#hipaa-notice`}
+              className="inline-block mt-2 text-[12px] font-semibold text-copper hover:text-copper-dark underline underline-offset-2"
+            >
+              {l.hipaaLinkLabel}
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* File: Driver's License (required, triggers OCR that fills fields) */}
@@ -553,6 +629,35 @@ export default function IntakeForm({
           maxLength={4000}
         />
       </Field>
+
+      {/* Required opt-ins: HIPAA authorization + contact consent (TCPA) */}
+      <div className="mt-5 space-y-3">
+        <label className="flex gap-3 items-start cursor-pointer group">
+          <input
+            type="checkbox"
+            checked={hipaaAuth}
+            onChange={(e) => setHipaaAuth(e.target.checked)}
+            required
+            className="mt-1 h-4 w-4 flex-shrink-0 rounded border-cream-400 text-copper focus:ring-2 focus:ring-copper cursor-pointer"
+          />
+          <span className="text-[12px] text-brown-500 leading-relaxed group-hover:text-brown-700 transition-colors">
+            {l.hipaaAuthLabel}
+          </span>
+        </label>
+
+        <label className="flex gap-3 items-start cursor-pointer group">
+          <input
+            type="checkbox"
+            checked={contactOptIn}
+            onChange={(e) => setContactOptIn(e.target.checked)}
+            required
+            className="mt-1 h-4 w-4 flex-shrink-0 rounded border-cream-400 text-copper focus:ring-2 focus:ring-copper cursor-pointer"
+          />
+          <span className="text-[12px] text-brown-500 leading-relaxed group-hover:text-brown-700 transition-colors">
+            {l.contactOptInLabel}
+          </span>
+        </label>
+      </div>
 
       <p className="text-[11px] text-brown-300 mt-3 leading-relaxed">
         {l.consent}
