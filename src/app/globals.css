@@ -37,3 +37,39 @@
     @apply mx-auto max-w-narrow px-4 sm:px-6 lg:px-8;
   }
 }
+
+/* ───────────────────────────────────────────────────────────── */
+/* LOCK: GHL chat widget pinned to bottom-right, every viewport. */
+/* The GHL loader injects several container variants — cover     */
+/* every one and override inline styles with !important.         */
+/* ───────────────────────────────────────────────────────────── */
+
+#chat-widget-container,
+#chat-widget,
+[id^="chat-widget"],
+[class^="chat-widget"],
+[class*=" chat-widget"],
+chat-widget,
+chat-widget *,
+iframe[src*="leadconnectorhq"][src*="chat-widget"],
+iframe[src*="widgets.leadconnectorhq"][src*="chat"],
+div[data-widget-id="69de5eba9f3b6f02617c0605"] {
+  position: fixed !important;
+  top: auto !important;
+  left: auto !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 2147483000 !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+@supports (padding: env(safe-area-inset-bottom)) {
+  #chat-widget-container,
+  #chat-widget,
+  [id^="chat-widget"],
+  iframe[src*="leadconnectorhq"][src*="chat-widget"] {
+    bottom: calc(20px + env(safe-area-inset-bottom)) !important;
+    right: calc(16px + env(safe-area-inset-right)) !important;
+  }
+}
