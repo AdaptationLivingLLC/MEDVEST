@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { useMemo, useRef, useState } from "react";
+import { useId, useMemo, useRef, useState } from "react";
 
 // -----------------------------------------------------------------------------
 // Copy
@@ -725,10 +725,9 @@ function FileField({
     replaceFile: string;
   };
 }) {
-  const inputId = useMemo(
-    () => `ff-${label.replace(/\s+/g, "-").toLowerCase()}-${Math.random().toString(36).slice(2, 7)}`,
-    [label]
-  );
+  const reactId = useId();
+  const inputId = `ff-${reactId}`;
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   const [dragging, setDragging] = useState(false);
 
@@ -746,6 +745,8 @@ function FileField({
         {label}
       </label>
       <div
+        role="button"
+        tabIndex={0}
         className={[
           "relative border-2 border-dashed rounded-card transition-colors text-center cursor-pointer px-4 py-4",
           dragging
@@ -766,16 +767,20 @@ function FileField({
           setDragging(false);
           handleFiles(e.dataTransfer.files);
         }}
-        onClick={() => {
-          const el = document.getElementById(inputId) as HTMLInputElement | null;
-          el?.click();
+        onClick={() => fileInputRef.current?.click()}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            fileInputRef.current?.click();
+          }
         }}
       >
         <input
+          ref={fileInputRef}
           id={inputId}
           type="file"
           accept="image/*,application/pdf,.heic,.heif"
-          className="hidden"
+          className="sr-only"
           onChange={(e) => handleFiles(e.target.files)}
         />
 
@@ -884,10 +889,9 @@ function MultiFileField({
   onRemove: (idx: number) => void;
   dropOrClickLabel: string;
 }) {
-  const inputId = useMemo(
-    () => `mf-${Math.random().toString(36).slice(2, 7)}`,
-    []
-  );
+  const reactId = useId();
+  const inputId = `mf-${reactId}`;
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
   const [dragging, setDragging] = useState(false);
 
   function handleFiles(list: FileList | null) {
@@ -904,6 +908,8 @@ function MultiFileField({
         {label}
       </label>
       <div
+        role="button"
+        tabIndex={0}
         className={[
           "relative border-2 border-dashed rounded-card transition-colors text-center cursor-pointer px-4 py-4",
           dragging
@@ -920,17 +926,21 @@ function MultiFileField({
           setDragging(false);
           handleFiles(e.dataTransfer.files);
         }}
-        onClick={() => {
-          const el = document.getElementById(inputId) as HTMLInputElement | null;
-          el?.click();
+        onClick={() => fileInputRef.current?.click()}
+        onKeyDown={(e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            fileInputRef.current?.click();
+          }
         }}
       >
         <input
+          ref={fileInputRef}
           id={inputId}
           type="file"
           multiple
           accept="image/*,application/pdf,.heic,.heif,.doc,.docx"
-          className="hidden"
+          className="sr-only"
           onChange={(e) => handleFiles(e.target.files)}
         />
         <p className="text-sm text-brown-500">{dropOrClickLabel}</p>
