@@ -7,6 +7,7 @@ import { google, drive_v3 } from "googleapis";
 import { JWT } from "google-auth-library";
 import { readFileSync } from "fs";
 import path from "path";
+import { Readable } from "stream";
 
 const SCOPES = ["https://www.googleapis.com/auth/drive"];
 
@@ -155,7 +156,6 @@ export async function uploadFile(params: {
   buffer: Buffer;
 }): Promise<{ fileId: string; fileUrl: string }> {
   const drive = driveClient();
-  const { Readable } = await import("stream");
 
   const res = await drive.files.create({
     requestBody: {
