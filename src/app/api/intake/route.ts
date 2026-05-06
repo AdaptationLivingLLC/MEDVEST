@@ -24,7 +24,6 @@ const MAX_TOTAL_BYTES = Number(
 const MAX_PER_FILE_BYTES = Number(
   process.env.INTAKE_MAX_PER_FILE_BYTES || 95 * 1024 * 1024
 );
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_RE = /^[+\d][\d\s\-().]{6,20}$/;
 
 const INTAKE_CUSTOM_FIELDS = [
@@ -103,34 +102,14 @@ export async function POST(request: Request) {
     const consentUserAgent = (request.headers.get("user-agent") || "")
       .slice(0, 500);
 
-    if (!hipaaAuth) {
-      return NextResponse.json(
-        { error: "HIPAA authorization is required to process your intake." },
-        { status: 400 }
-      );
-    }
-    if (!contactOptIn) {
-      return NextResponse.json(
-        { error: "Contact consent is required to process your intake." },
-        { status: 400 }
-      );
-    }
-
-    if (!firstName || !lastName) {
-      return NextResponse.json(
-        { error: "First and last name are required." },
-        { status: 400 }
-      );
-    }
-    if (!EMAIL_RE.test(email)) {
-      return NextResponse.json(
-        { error: "Valid email required." },
-        { status: 400 }
-      );
-    }
+    // Contact info, HIPAA auth, and contact opt-in are ALL optional. We record
+    // them when present so Shahpoor can follow up offline for written consent
+    // before processing PHI, but we never block the upload itself. Only a
+    // malformed phone number is rejected — if the user typed garbage in the
+    // phone field, we cannot create a usable contact record from it.
     if (phone && !PHONE_RE.test(phone)) {
       return NextResponse.json(
-        { error: "Invalid phone number." },
+        { error: "That phone number does not look valid. Leave it blank if you prefer." },
         { status: 400 }
       );
     }
@@ -175,10 +154,18 @@ export async function POST(request: Request) {
       );
     }
 
-    // Drive folder
+    // Drive folder. When neither name was provided, generate a unique
+    // anonymous folder so multiple no-name uploads do not collide on Drive.
+    const isAnonymous = !firstName && !lastName;
+    const folderFirstName = firstName || (isAnonymous ? "Anonymous" : "Unknown");
+    const folderLastName =
+      lastName ||
+      (isAnonymous
+        ? `Upload-${new Date().toISOString().replace(/[-:.TZ]/g, "").slice(0, 14)}-${Math.random().toString(36).slice(2, 6)}`
+        : "Unknown");
     const { folderId, folderUrl, folderName } = await createClientFolder({
-      firstName,
-      lastName,
+      firstName: folderFirstName,
+      lastName: folderLastName,
     });
 
     const uploads: Array<{ label: string; filename: string; fileUrl: string }> = [];
@@ -302,9 +289,9 @@ export async function POST(request: Request) {
     setField("Intake Reason", reason);
     setField("Drive Folder URL", folderUrl);
     setField("Drive Folder Name", folderName);
-    setField("HIPAA Authorization Given", "yes");
+    setField("HIPAA Authorization Given", hipaaAuth ? "yes" : "no");
     setField("HIPAA Authorization Timestamp", consentTimestamp);
-    setField("Contact Opt-In Given", "yes");
+    setField("Contact Opt-In Given", contactOptIn ? "yes" : "no");
     setField("Contact Opt-In Timestamp", consentTimestamp);
     setField("Consent IP Address", consentIp);
     setField("Consent User Agent", consentUserAgent);
@@ -312,59 +299,80 @@ export async function POST(request: Request) {
       setField(name, value);
     }
 
-    // Upsert contact
-    const tags = [
-      "intake-complete",
-      `locale:${locale}`,
-      "hipaa-authorized",
-      "sms-opt-in",
-    ];
-    const { contactId, created } = await upsertContact({
-      firstName,
-      lastName,
-      email,
-      phone: phone || undefined,
-      dateOfBirth: dob || ocrData["OCR DOB"] || undefined,
-      address1: address1 || undefined,
-      city: city || undefined,
-      state: state || undefined,
-      postalCode: postalCode || undefined,
-      source: "website-intake",
-      tags,
-      customFields: customFieldPayload.length ? customFieldPayload : undefined,
-    });
+    // GHL contact upsert needs at least one identifier (email or phone). When
+    // the visitor uploaded documents anonymously we keep the Drive folder but
+    // skip the GHL leg entirely; Shahpoor follows up from the Drive folder.
+    const hasIdentifier = Boolean(email || phone);
+    let contactId: string | null = null;
+    let created = false;
 
-    // Ensure tags land even if upsert dropped them
-    await addTagsToContact(contactId, tags);
+    if (hasIdentifier) {
+      const tags = [
+        "intake-complete",
+        `locale:${locale}`,
+        hipaaAuth ? "hipaa-authorized" : "hipaa-not-yet-authorized",
+        contactOptIn ? "sms-opt-in" : "no-sms-opt-in",
+      ];
+      const upsertResult = await upsertContact({
+        firstName: firstName || "Walk-In",
+        lastName: lastName || "Upload",
+        email:
+          email ||
+          `noemail+${phone.replace(/[^0-9]/g, "") || "anon"}@medvst.local`,
+        phone: phone || undefined,
+        dateOfBirth: dob || ocrData["OCR DOB"] || undefined,
+        address1: address1 || undefined,
+        city: city || undefined,
+        state: state || undefined,
+        postalCode: postalCode || undefined,
+        source: "website-intake",
+        tags,
+        customFields: customFieldPayload.length ? customFieldPayload : undefined,
+      });
+      contactId = upsertResult.contactId;
+      created = upsertResult.created;
 
-    // Summary note + follow-up task
-    const summaryLines = [
-      `[Intake — ${locale.toUpperCase()}] ${folderName}`,
-      `Drive: ${folderUrl}`,
-      reason ? `Reason: ${reason}` : undefined,
-      uploads.length
-        ? `Uploads: ${uploads.map((u) => u.label).join(", ")}`
-        : undefined,
-      Object.keys(ocrData).length
-        ? `OCR: ${Object.entries(ocrData)
-            .map(([k, v]) => `${k.replace("OCR ", "")}=${v}`)
-            .join("; ")}`
-        : undefined,
-      `Consent: HIPAA=yes, SMS/Email Opt-In=yes @ ${consentTimestamp} from ${consentIp}`,
-      `User-Agent: ${consentUserAgent || "unknown"}`,
-    ].filter(Boolean) as string[];
-    await createNote(contactId, summaryLines.join("\n"));
+      await addTagsToContact(contactId, tags);
 
-    await createTask(contactId, {
-      title: `Review intake for ${firstName} ${lastName}`,
-      body: `Intake submitted. Documents uploaded to ${folderUrl}.\n\n${summaryLines.join("\n")}`,
-    });
+      const displayName =
+        [firstName, lastName].filter(Boolean).join(" ") ||
+        email ||
+        phone ||
+        "Anonymous Upload";
+      const summaryLines = [
+        `[Intake — ${locale.toUpperCase()}] ${folderName}`,
+        `Drive: ${folderUrl}`,
+        reason ? `Reason: ${reason}` : undefined,
+        uploads.length
+          ? `Uploads: ${uploads.map((u) => u.label).join(", ")}`
+          : undefined,
+        Object.keys(ocrData).length
+          ? `OCR: ${Object.entries(ocrData)
+              .map(([k, v]) => `${k.replace("OCR ", "")}=${v}`)
+              .join("; ")}`
+          : undefined,
+        `Consent: HIPAA=${hipaaAuth ? "yes" : "no"}, SMS/Email Opt-In=${contactOptIn ? "yes" : "no"} @ ${consentTimestamp} from ${consentIp}`,
+        `User-Agent: ${consentUserAgent || "unknown"}`,
+      ].filter(Boolean) as string[];
+      await createNote(contactId, summaryLines.join("\n"));
+
+      await createTask(contactId, {
+        title: `Review intake for ${displayName}`,
+        body: `Intake submitted. Documents uploaded to ${folderUrl}.\n\n${summaryLines.join("\n")}${hipaaAuth ? "" : "\n\nNOTE: HIPAA authorization was NOT given on the form. Obtain written authorization before processing PHI."}`,
+      });
+    } else {
+      // Anonymous upload — log the Drive landing so it does not get lost.
+      console.log(
+        `[Intake] Anonymous upload received. Drive folder: ${folderUrl} (${folderName}). Files: ${uploads.length}. Consent: HIPAA=${hipaaAuth ? "yes" : "no"}, SMS=${contactOptIn ? "yes" : "no"}.`
+      );
+    }
 
     return NextResponse.json(
       {
         success: true,
         contactId,
         created,
+        anonymous: !hasIdentifier,
         folderUrl,
         uploads: uploads.map((u) => ({ label: u.label, url: u.fileUrl })),
       },

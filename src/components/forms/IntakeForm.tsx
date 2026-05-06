@@ -54,11 +54,14 @@ const labels = {
       "Your uploads are encrypted in transit (TLS 1.3) and at rest (AES-256). Medvst fully complies with HIPAA, HITECH, 42 CFR Part 2, the ADA, and all applicable federal and state privacy laws. We never sell your information and never disclose Protected Health Information without your written authorization, except as permitted by law.",
     hipaaLinkLabel: "Read our full HIPAA Notice of Privacy Practices →",
     hipaaAuthLabel:
-      "HIPAA Authorization (required): I authorize Medvst to collect, use, and disclose my Protected Health Information (PHI), medical records, and insurance information solely for the purpose of evaluating and processing my Medicare Set-Aside case. I understand I may revoke this authorization in writing at any time.",
+      "HIPAA Authorization (optional, recommended): If checked, I authorize Medvst to collect, use, and disclose my Protected Health Information (PHI), medical records, and insurance information solely for the purpose of evaluating and processing my Medicare Set-Aside case. I understand I may revoke this authorization in writing at any time. You may also provide this authorization later — uploading documents now does not require checking this box.",
     contactOptInLabel:
-      "Contact consent (required): I agree to be contacted by Medvst at the phone number and email I provided, including by SMS, email, and autodialed or prerecorded calls about my case. Message and data rates may apply. Reply STOP to opt out. Consent is not a condition of service.",
-    authRequired: "You must authorize Medvst to process your PHI to continue.",
-    optInRequired: "You must agree to be contacted about your case to continue.",
+      "Contact consent (optional): If checked, I agree to be contacted by Medvst at the phone number and email I provided, including by SMS, email, and autodialed or prerecorded calls about my case. Message and data rates may apply. Reply STOP to opt out. Consent is not a condition of service and is not required to upload documents.",
+    authRequired: "",
+    optInRequired: "",
+    documentRequired: "Please attach at least one document before submitting. We accept any file — ID, insurance card, Medicare card, medical record, or any related document.",
+    documentMinHint: "Upload at least one document below — anything you have. Everything else on this form is optional.",
+    contactOptional: "Contact information is optional. We will only follow up if you provide an email or phone number.",
   },
   es: {
     eyebrow: "Admisión Segura de Pacientes",
@@ -109,15 +112,16 @@ const labels = {
       "Sus archivos se cifran en tránsito (TLS 1.3) y en reposo (AES-256). Medvst cumple totalmente con HIPAA, HITECH, 42 CFR Parte 2, la ADA y todas las leyes federales y estatales de privacidad aplicables. Nunca vendemos su información ni divulgamos Información de Salud Protegida sin su autorización escrita, excepto cuando la ley lo permita.",
     hipaaLinkLabel: "Lea nuestro Aviso completo de Prácticas de Privacidad HIPAA →",
     hipaaAuthLabel:
-      "Autorización HIPAA (requerido): Autorizo a Medvst a recopilar, usar y divulgar mi Información de Salud Protegida (PHI), registros médicos e información de seguro únicamente con el fin de evaluar y procesar mi caso de Medicare Set-Aside. Entiendo que puedo revocar esta autorización por escrito en cualquier momento.",
+      "Autorización HIPAA (opcional, recomendado): Si marca esta casilla, autorizo a Medvst a recopilar, usar y divulgar mi Información de Salud Protegida (PHI), registros médicos e información de seguro únicamente con el fin de evaluar y procesar mi caso de Medicare Set-Aside. Entiendo que puedo revocar esta autorización por escrito en cualquier momento. Puede proporcionar esta autorización más tarde — subir documentos ahora no requiere marcar esta casilla.",
     contactOptInLabel:
-      "Consentimiento de contacto (requerido): Acepto ser contactado por Medvst al teléfono y correo electrónico que proporcioné, incluyendo por SMS, correo electrónico y llamadas automáticas o pregrabadas sobre mi caso. Pueden aplicar tarifas de mensajería y datos. Responda STOP para cancelar. El consentimiento no es condición para recibir el servicio.",
-    authRequired: "Debe autorizar a Medvst a procesar su PHI para continuar.",
-    optInRequired: "Debe aceptar ser contactado sobre su caso para continuar.",
+      "Consentimiento de contacto (opcional): Si marca esta casilla, acepto ser contactado por Medvst al teléfono y correo electrónico que proporcioné, incluyendo por SMS, correo electrónico y llamadas automáticas o pregrabadas sobre mi caso. Pueden aplicar tarifas de mensajería y datos. Responda STOP para cancelar. El consentimiento no es condición para recibir el servicio y no es requerido para subir documentos.",
+    authRequired: "",
+    optInRequired: "",
+    documentRequired: "Adjunte al menos un documento antes de enviar. Aceptamos cualquier archivo — identificación, tarjeta de seguro, tarjeta de Medicare, registro médico o cualquier documento relacionado.",
+    documentMinHint: "Suba al menos un documento a continuación — lo que tenga. Todo lo demás en este formulario es opcional.",
+    contactOptional: "La información de contacto es opcional. Solo le contactaremos si proporciona un correo electrónico o número de teléfono.",
   },
 };
-
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 // -----------------------------------------------------------------------------
 // Types
@@ -263,28 +267,15 @@ export default function IntakeForm({
     e.preventDefault();
     setSubmitError(null);
 
-    if (!form.firstName.trim() || !form.lastName.trim()) {
-      setSubmitError(l.error);
-      setSubmitStatus("error");
-      return;
-    }
-    if (!EMAIL_RE.test(form.email)) {
-      setSubmitError(l.error);
-      setSubmitStatus("error");
-      return;
-    }
-    if (!licenseField.file) {
-      setSubmitError(l.error);
-      setSubmitStatus("error");
-      return;
-    }
-    if (!hipaaAuth) {
-      setSubmitError(l.authRequired);
-      setSubmitStatus("error");
-      return;
-    }
-    if (!contactOptIn) {
-      setSubmitError(l.optInRequired);
+    const attachedFiles: File[] = [];
+    if (licenseField.file) attachedFiles.push(licenseField.file);
+    if (insuranceFront.file) attachedFiles.push(insuranceFront.file);
+    if (insuranceBack.file) attachedFiles.push(insuranceBack.file);
+    if (medicare.file) attachedFiles.push(medicare.file);
+    for (const m of medicalRecords) attachedFiles.push(m);
+
+    if (attachedFiles.length === 0) {
+      setSubmitError(l.documentRequired);
       setSubmitStatus("error");
       return;
     }
@@ -450,9 +441,12 @@ export default function IntakeForm({
         </div>
       </div>
 
-      {/* File: Driver's License (required, triggers OCR that fills fields) */}
+      {/* Documents — at least one required overall. Each field below is individually optional; people can drop a single medical record into the catch-all field at the bottom. */}
+      <p className="mb-3 text-[12px] font-semibold text-brown-700 leading-relaxed">
+        {l.documentMinHint}
+      </p>
       <FileField
-        label={`${l.license} *`}
+        label={l.license}
         hint={l.licenseHint}
         state={licenseField}
         onFile={(f) => scanLicense(f)}
@@ -468,35 +462,35 @@ export default function IntakeForm({
         }}
       />
 
-      {/* Personal details */}
-      <div className="grid sm:grid-cols-2 gap-3 mt-5">
-        <Field label={`${l.firstName} *`}>
+      {/* Personal details — every field optional. We keep them visible so people can fill what they want, but submission never blocks on them. */}
+      <p className="mt-5 mb-3 text-[12px] text-brown-500 leading-relaxed">
+        {l.contactOptional}
+      </p>
+      <div className="grid sm:grid-cols-2 gap-3">
+        <Field label={l.firstName}>
           <input
             className={inputCls}
             value={form.firstName}
             onChange={(e) => update("firstName", e.target.value)}
-            required
             maxLength={60}
             autoComplete="given-name"
           />
         </Field>
-        <Field label={`${l.lastName} *`}>
+        <Field label={l.lastName}>
           <input
             className={inputCls}
             value={form.lastName}
             onChange={(e) => update("lastName", e.target.value)}
-            required
             maxLength={60}
             autoComplete="family-name"
           />
         </Field>
-        <Field label={`${l.email} *`}>
+        <Field label={l.email}>
           <input
             className={inputCls}
             type="email"
             value={form.email}
             onChange={(e) => update("email", e.target.value)}
-            required
             maxLength={254}
             autoComplete="email"
           />
@@ -631,13 +625,13 @@ export default function IntakeForm({
       </Field>
 
       {/* Required opt-ins: HIPAA authorization + contact consent (TCPA) */}
+      {/* Optional consents — visible for compliance but never block submission. */}
       <div className="mt-5 space-y-3">
         <label className="flex gap-3 items-start cursor-pointer group">
           <input
             type="checkbox"
             checked={hipaaAuth}
             onChange={(e) => setHipaaAuth(e.target.checked)}
-            required
             className="mt-1 h-4 w-4 flex-shrink-0 rounded border-cream-400 text-copper focus:ring-2 focus:ring-copper cursor-pointer"
           />
           <span className="text-[12px] text-brown-500 leading-relaxed group-hover:text-brown-700 transition-colors">
@@ -650,7 +644,6 @@ export default function IntakeForm({
             type="checkbox"
             checked={contactOptIn}
             onChange={(e) => setContactOptIn(e.target.checked)}
-            required
             className="mt-1 h-4 w-4 flex-shrink-0 rounded border-cream-400 text-copper focus:ring-2 focus:ring-copper cursor-pointer"
           />
           <span className="text-[12px] text-brown-500 leading-relaxed group-hover:text-brown-700 transition-colors">
